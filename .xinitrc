@@ -1,7 +1,6 @@
 xset r rate 200 40
 xset s off
 xset -dpms
-xkbdrate -d 200 -r 40
 setxkbmap -option caps:escape
 setxkbmap -option compose:rctrl
 xinput --disable 12

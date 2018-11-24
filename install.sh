@@ -25,3 +25,6 @@ for FILE in $FILES; do
     echo "create symlink to $FILE in $HOME"
     ln -s $DIR/$FILE $HOME/$FILE
 done
+
+# copy background image
+cp $DIR/pictures/arch.png $HOME/Pictures/arch.png

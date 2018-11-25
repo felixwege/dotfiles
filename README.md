@@ -7,6 +7,7 @@
 - i3-gaps
 - termite
 - vim
+- vundle
 - feh
 - ranger
 - xbanish

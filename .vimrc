@@ -75,6 +75,9 @@ set showcmd
 
 set path+=**
 
+" focus centre of screen (vertically) while scrolling
+set scrolloff=1337
+
 "---------- tabstop, softtabstop, shiftwidth ----------
 " default values
 set tabstop=4

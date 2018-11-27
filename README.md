@@ -18,6 +18,7 @@
 
 # Installation
 Have a look at the `install.sh` script and the dotfiles before you install. Installation at your own risk.
+Install the requirements before you call the install script.
 
 ```
 git clone dotfiles git@gitlab.com:felixwege/dotfiles.git

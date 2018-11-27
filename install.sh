@@ -9,6 +9,7 @@ FILES="
     .config/i3/config
     .config/termite/config
     .fehbg
+    .taskrc
     .xinitrc
     .Xresources
     .zshrc

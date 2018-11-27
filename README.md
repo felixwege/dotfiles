@@ -15,6 +15,7 @@
 - xorg-setxkbmap
 - xorg-xinput
 - nm-applet
+- task (taskwarrior)
 
 # Installation
 Have a look at the `install.sh` script and the dotfiles before you install. Installation at your own risk.

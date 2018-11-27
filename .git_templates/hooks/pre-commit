@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+from subprocess import Popen, PIPE
+import sys
+
+process = Popen(["git", "show-branch", "HEAD"], stdout=PIPE)
+(output, err) = process.communicate()
+exit_code = process.wait()
+
+if "--wip--" in str(output):
+    print("Your last commit is a wip commit! use \"gunwip\" before committing!")
+    sys.exit(1)
+
+sys.exit(0)

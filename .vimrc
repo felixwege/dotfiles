@@ -174,7 +174,7 @@ endfunc
 
 "---------- you complete me ----------
 let g:ycm_python_binary_path = '/usr/bin/python3'
-let g:ycm_extra_conf_globlist = ['~/Repositories/nao/*']
+let g:ycm_extra_conf_globlist = ['~/Repositories/HULKs/nao/*']
 
 nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 

@@ -24,3 +24,6 @@ git clone dotfiles git@gitlab.com:felixwege/dotfiles.git
 cd dotfiles
 ./install
 ```
+# Screenshot
+
+![Screenshot](./pictures/screenshot.png)

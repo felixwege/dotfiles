@@ -137,6 +137,9 @@ alias gamecontroller="cd $HOME/Repositories/HULKs/GameController/build/jar/; jav
 alias teamcommunicationmonitor="cd $HOME/Repositories/HULKs/GameController/build/jar/; java -jar TeamCommunicationMonitor.jar -w &; popd"
 alias mate="~/.venv/nao/bin/python ~/Repositories/HULKs/nao/tools/mate/run.py"
 
+# official robocup spl rules
+alias rules="pdf ~/Documents/HULKs/Rules2019.pdf"
+
 # open terminal in current directory (single quotes are required to evaulate current pwd)
 alias here='termite -d $(pwd) > /dev/null 2>&1 &'
 

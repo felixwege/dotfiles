@@ -140,6 +140,7 @@ alias mate="~/.venv/nao/bin/python ~/Repositories/HULKs/nao/tools/mate/run.py"
 # open terminal in current directory (single quotes are required to evaulate current pwd)
 alias here='termite -d $(pwd) > /dev/null 2>&1 &'
 
+# task warrior
 alias t="task"
 alias tt="clear && task"
 alias ta="task add"

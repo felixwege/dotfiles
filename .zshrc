@@ -142,3 +142,5 @@ alias here='termite -d $(pwd) > /dev/null 2>&1 &'
 
 alias t="task"
 alias tt="clear && task"
+alias ta="task add"
+alias td="task done"

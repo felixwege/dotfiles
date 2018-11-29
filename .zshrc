@@ -120,6 +120,15 @@ function pdf {
   fi
 }
 
+# load screen layout and set background
+function fehrandr {
+    if [ -n "$1" ]; then
+        $1 && $HOME/.fehbg
+    else
+        echo "please specify xrandr command or load arandr screenlayout"
+    fi
+}
+
 # git merge squash
 function gms {
   trackingBranch=$1

@@ -8,6 +8,7 @@
 - termite
 - vim
 - vundle
+- base16
 - feh
 - ranger
 - xbanish

@@ -152,6 +152,9 @@ alias rules="pdf ~/Documents/HULKs/Rules2019.pdf"
 # open terminal in current directory (single quotes are required to evaulate current pwd)
 alias here='termite -d $(pwd) > /dev/null 2>&1 &'
 
+# alsamixer
+alias am='alsamixer'
+
 # task warrior
 alias t="task"
 alias tt="clear && task"

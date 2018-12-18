@@ -129,6 +129,11 @@ function fehrandr {
     fi
 }
 
+# combine mkdir and cd
+function mkcd {
+    mkdir $1 && cd $1
+}
+
 # git merge squash
 function gms {
   trackingBranch=$1

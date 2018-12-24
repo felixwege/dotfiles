@@ -148,6 +148,19 @@ set $ws6 6
 set $ws7 7
 set $ws8 8
 set $ws9 9
+set $ws10 10
+set $ws11 11
+set $ws12 12
+set $ws13 13
+set $ws14 14
+set $ws15 15
+set $ws16 16
+set $ws17 17
+set $ws18 18
+set $ws19 19
+set $ws20 20
+set $ws21 21
+set $ws22 22
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -159,6 +172,19 @@ bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+bindcode $mod+67 workspace $ws11
+bindcode $mod+68 workspace $ws12
+bindcode $mod+69 workspace $ws13
+bindcode $mod+70 workspace $ws14
+bindcode $mod+71 workspace $ws15
+bindcode $mod+72 workspace $ws16
+bindcode $mod+73 workspace $ws17
+bindcode $mod+74 workspace $ws18
+bindcode $mod+75 workspace $ws19
+bindcode $mod+76 workspace $ws20
+bindcode $mod+95 workspace $ws21
+bindcode $mod+96 workspace $ws22
 
 # Move focused container to workspace
 bindsym $mod+Ctrl+1 move container to workspace $ws1
@@ -170,6 +196,19 @@ bindsym $mod+Ctrl+6 move container to workspace $ws6
 bindsym $mod+Ctrl+7 move container to workspace $ws7
 bindsym $mod+Ctrl+8 move container to workspace $ws8
 bindsym $mod+Ctrl+9 move container to workspace $ws9
+bindsym $mod+Ctrl+0 move container to workspace $ws10
+bindcode $mod+Ctrl+67 move container to workspace $ws11
+bindcode $mod+Ctrl+68 move container to workspace $ws12
+bindcode $mod+Ctrl+69 move container to workspace $ws13
+bindcode $mod+Ctrl+70 move container to workspace $ws14
+bindcode $mod+Ctrl+71 move container to workspace $ws15
+bindcode $mod+Ctrl+72 move container to workspace $ws16
+bindcode $mod+Ctrl+73 move container to workspace $ws17
+bindcode $mod+Ctrl+74 move container to workspace $ws18
+bindcode $mod+Ctrl+75 move container to workspace $ws19
+bindcode $mod+Ctrl+76 move container to workspace $ws20
+bindcode $mod+Ctrl+95 move container to workspace $ws21
+bindcode $mod+Ctrl+96 move container to workspace $ws22
 
 # Move to workspace with focused container
 bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
@@ -181,6 +220,19 @@ bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
+bindcode $mod+Shift+67 move container to workspace $ws11; workspace $ws11
+bindcode $mod+Shift+68 move container to workspace $ws12; workspace $ws12
+bindcode $mod+Shift+69 move container to workspace $ws13; workspace $ws13
+bindcode $mod+Shift+70 move container to workspace $ws14; workspace $ws14
+bindcode $mod+Shift+71 move container to workspace $ws15; workspace $ws15
+bindcode $mod+Shift+72 move container to workspace $ws16; workspace $ws16
+bindcode $mod+Shift+73 move container to workspace $ws17; workspace $ws17
+bindcode $mod+Shift+74 move container to workspace $ws18; workspace $ws18
+bindcode $mod+Shift+75 move container to workspace $ws19; workspace $ws19
+bindcode $mod+Shift+76 move container to workspace $ws20; workspace $ws20
+bindcode $mod+Shift+95 move container to workspace $ws21; workspace $ws21
+bindcode $mod+Shift+96 move container to workspace $ws22; workspace $ws22
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

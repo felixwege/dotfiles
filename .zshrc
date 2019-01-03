@@ -1,3 +1,7 @@
+# variables that determine which aliases and functions should be sourced
+TASKWARRIOR=true
+HULKS=true
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -155,7 +159,11 @@ alias here='termite -d $(pwd) > /dev/null 2>&1 &'
 alias am='alsamixer'
 
 # task warrior
-source ~/.aliases/taskwarrior.sh
+if [ $TASKWARRIOR = true ]; then
+    source ~/.aliases/taskwarrior.sh
+fi
 
 # hulks
-source ~/.aliases/hulks.sh
+if [ $HULKS = true ]; then
+    source ~/.aliases/hulks.sh
+fi

@@ -6,13 +6,13 @@ OLDDIR=$DIR/old
 
 # name of all dotfiles
 FILES="
+    .autostart
     .config/i3/config
     .config/termite/config
     .fehbg
     .gitconfig
     .git_templates/hooks/pre-commit
     .taskrc
-    .xinitrc
     .Xresources
     .zshrc
     "

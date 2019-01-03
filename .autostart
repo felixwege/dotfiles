@@ -7,4 +7,3 @@ xinput --disable 12
 feh --bg-scale ~/Pictures/arch.png
 ~/xbanish/xbanish &
 nm-applet &
-exec i3

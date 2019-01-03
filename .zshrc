@@ -158,6 +158,9 @@ alias here='termite -d $(pwd) > /dev/null 2>&1 &'
 # alsamixer
 alias am='alsamixer'
 
+# preserve user environment
+alias rvim="sudo -E vim"
+
 # task warrior
 if [ $TASKWARRIOR = true ]; then
     source ~/.aliases/taskwarrior.sh

@@ -148,15 +148,6 @@ function gms {
 alias grl="git reflog"
 alias gdn="git diff --name-only"
 
-# start SimRobot, GameController, TeamCommunicationMonitor or mate
-alias simrobot="$HOME/Repositories/HULKs/nao/tools/SimRobot/build/SimRobot"
-alias gamecontroller="cd $HOME/Repositories/HULKs/GameController/build/jar/; java -jar GameController.jar --window &; popd"
-alias teamcommunicationmonitor="cd $HOME/Repositories/HULKs/GameController/build/jar/; java -jar TeamCommunicationMonitor.jar -w &; popd"
-alias mate="~/.venv/nao/bin/python ~/Repositories/HULKs/nao/tools/mate/run.py"
-
-# official robocup spl rules
-alias rules="pdf ~/Documents/HULKs/Rules2019.pdf"
-
 # open terminal in current directory (single quotes are required to evaulate current pwd)
 alias here='termite -d $(pwd) > /dev/null 2>&1 &'
 
@@ -164,28 +155,7 @@ alias here='termite -d $(pwd) > /dev/null 2>&1 &'
 alias am='alsamixer'
 
 # task warrior
-alias t="task"
-alias tt="clear && task"
-alias ta="task add"
-alias td="task done"
-alias tm="task modify"
+source ~/.aliases/taskwarrior.sh
 
-function tap {
-    task add $1 project:$2
-}
-
-function tad {
-    task add $1 due:$2
-}
-
-function tapd {
-    task add $1 pro:$2 due:$3
-}
-
-function tmp {
-    task $1 modify project:$2
-}
-
-function tmd {
-    task $1 modify due:$2
-}
+# hulks
+source ~/.aliases/hulks.sh

@@ -183,9 +183,9 @@ function tapd {
 }
 
 function tmp {
-    task modify $1 project:$2
+    task $1 modify project:$2
 }
 
 function tmd {
-    task modify $1 due:$2
+    task $1 modify due:$2
 }

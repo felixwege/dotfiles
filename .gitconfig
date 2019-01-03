@@ -1,7 +1,9 @@
-[core]
-	editor = vim
 [init]
 	templatedir = ~/.git_templates
 [user]
 	email = felix.wege@tuhh.de
 	name = Felix Wege
+[branch]
+	autosetuprebase = always
+[rerere]
+	enable = true

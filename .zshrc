@@ -171,5 +171,21 @@ alias td="task done"
 alias tm="task modify"
 
 function tap {
-    task add project:$1 $2
+    task add $1 project:$2
+}
+
+function tad {
+    task add $1 due:$2
+}
+
+function tapd {
+    task add $1 pro:$2 due:$3
+}
+
+function tmp {
+    task modify $1 project:$2
+}
+
+function tmd {
+    task modify $1 due:$2
 }

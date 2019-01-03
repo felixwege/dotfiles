@@ -169,3 +169,7 @@ alias tt="clear && task"
 alias ta="task add"
 alias td="task done"
 alias tm="task modify"
+
+function tap {
+    task add project:$1 $2
+}

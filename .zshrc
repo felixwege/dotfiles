@@ -1,6 +1,6 @@
 # variables that determine which aliases and functions should be sourced
 TASKWARRIOR=true
-HULKS=true
+HULKS=false
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH

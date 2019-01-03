@@ -12,6 +12,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
 
+" auto-completion
+Plugin 'Valloric/YouCompleteMe'
+
 " search
 Plugin 'kien/ctrlp.vim'
 

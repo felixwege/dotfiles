@@ -88,26 +88,29 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" some small things ------------------------------------------------------------
-" highlight cursor row and column
+" general settings -------------------------------------------------------------
 set cursorline
 set cursorcolumn
-
-" spaces > tabs
-set expandtab
-
+set expandtab " spaces > tabs
 syntax enable
-
-" relative line numbers
-set number relativenumber
-
-" show keys pressed
-set showcmd
-
+set number relativenumber "absolute number for current line and relative numbers for all other lines
+set showcmd " show key strokes
 set path+=**
+set scrolloff=1337 " focus centre of screen (vertically) while scrolling
+set encoding=UTF-8
+set nowrap " do not wrap long lines
+set ignorecase " case insensitive search
 
-" focus centre of screen (vertically) while scrolling
-set scrolloff=1337
+
+" search -----------------------------------------------------------------------
+set hlsearch " highlight search results
+set incsearch " highlight things while searching
+
+" clear search highlight
+noremap <silent> <leader>/ :nohlsearch<CR>
+noremap <silent> <leader>* :nohlsearch<CR>
+noremap <silent> <leader># :nohlsearch<CR>
+
 
 " tabstop, softtabstop, shiftwidth ---------------------------------------------
 " default values
@@ -122,21 +125,6 @@ autocmd FileType cpp setlocal shiftwidth=2
 autocmd FileType hpp setlocal tabstop=2
 autocmd FileType hpp setlocal softtabstop=2
 autocmd FileType hpp setlocal shiftwidth=2
-
-" search -----------------------------------------------------------------------
-" case insensitive search
-set ignorecase
-
-" highlight search results
-set hlsearch
-
-" highlight things while searching
-set incsearch
-
-" clear search highlight
-noremap <silent> <leader>/ :nohlsearch<CR>
-noremap <silent> <leader>* :nohlsearch<CR>
-noremap <silent> <leader># :nohlsearch<CR>
 
 " clang format -----------------------------------------------------------------
 map <leader>c :ClangFormat<CR>

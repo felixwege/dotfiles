@@ -5,6 +5,7 @@ alias tt="clear && task"
 alias ta="task add"
 alias td="task done"
 alias tm="task modify"
+alias tw="task waiting"
 
 function tap {
     task add $1 project:$2

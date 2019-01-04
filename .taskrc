@@ -35,6 +35,11 @@ color.overdue=bold red
 report.simple.filter=status:pending
 report.simple.sort=project-/,urgency-,entry
 report.simple.columns=project,due,id,description
+
+report.waiting.sort=project-/,urgency-,entry
+report.waiting.columns=project,due,id,description
+report.waiting.labels=Project,Due,ID,Description
+
 default.command=simple
 
 editor=vim

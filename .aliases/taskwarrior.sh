@@ -14,3 +14,7 @@ function tmp {
 function tmd {
     task $1 modify due:$2
 }
+
+function tmw {
+    task $1 modify wait:$2
+}

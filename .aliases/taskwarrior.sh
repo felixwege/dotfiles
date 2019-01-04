@@ -7,18 +7,6 @@ alias td="task done"
 alias tm="task modify"
 alias tw="task waiting"
 
-function tap {
-    task add $1 project:$2
-}
-
-function tad {
-    task add $1 due:$2
-}
-
-function tapd {
-    task add $1 pro:$2 due:$3
-}
-
 function tmp {
     task $1 modify project:$2
 }

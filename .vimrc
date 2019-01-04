@@ -129,6 +129,19 @@ autocmd FileType hpp setlocal shiftwidth=2
 " clang format -----------------------------------------------------------------
 map <leader>c :ClangFormat<CR>
 
+
+" toggle wrapping --------------------------------------------------------------
+map <leader>w :call ToggleWrapping()<CR>
+
+function! ToggleWrapping()
+  if(&wrap == 1)
+    set nowrap
+  elseif(&wrap == 0)
+    set wrap
+  endif
+endfunc
+
+
 " toggle folding ---------------------------------------------------------------
 map <leader>f :call ToggleFolding()<CR>
 

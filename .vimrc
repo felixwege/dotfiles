@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+let mapleader=","
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -12,32 +13,65 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
 
-" auto-completion
+" YouCompleteMe (auto-completion) ----------------------------------------------
 Plugin 'Valloric/YouCompleteMe'
 
-" fzf search
+let g:ycm_python_binary_path = '/usr/bin/python3'
+let g:ycm_extra_conf_globlist = ['~/Repositories/HULKs/nao/*']
+
+nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+" fzf.vim (search) -------------------------------------------------------------
 Plugin 'junegunn/fzf.vim'
 
-" status line
-Plugin 'vim-airline/vim-airline'
+" these are independent of the fzf.vim plugin
+set rtp+=~/.fzf
+nnoremap <C-p> :FZF<CR>
 
-" status line themes
-Plugin 'vim-airline/vim-airline-themes'
+nnoremap <leader>pb :Buffers<CR>
+nnoremap <leader>pc :BCommits<CR>
 
-" color palette
+
+" base16-vim (color themes)
 Plugin 'chriskempson/base16-vim'
 
-" tree explorer
+let base16colorspace=256  " Access colors present in 256 colorspace
+
+
+" vim-airline (status line) ----------------------------------------------------
+Plugin 'vim-airline/vim-airline'
+
+let g:airline_theme='base16'
+
+let g:airline_section_b='%{fugitive#statusline()}'
+let g:airline_section_c='%f%m%r'
+let g:airline_section_z='%l/%L %c'
+
+
+" vim-airline-themes (status line themes) --------------------------------------
+Plugin 'vim-airline/vim-airline-themes'
+
+" nerdtree (tree explorer) -----------------------------------------------------
 Plugin 'scrooloose/nerdtree'
 
-" show git diff in gutter
+map <C-n> :NERDTreeToggle<CR>
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+
+" vim-gitgutter (show git diff in gutter) --------------------------------------
 Plugin 'airblade/vim-gitgutter'
 
-" git wrapper
+let g:gitgutter_sign_removed = "-"
+
+
+" vim-fugitive (git wrapper) ---------------------------------------------------
 Plugin 'tpope/vim-fugitive'
 
-" :Gbrowse etc
+
+" vim-rhubarb (:Gbrowse etc.) --------------------------------------------------
 Plugin 'tpope/vim-rhubarb'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -54,15 +88,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-"---------- some small things ----------
-
-" set leader key to ,
-let mapleader=","
-
-" highlight cursor row
+" some small things ------------------------------------------------------------
+" highlight cursor row and column
 set cursorline
-
-" hightlight cursor column
 set cursorcolumn
 
 " spaces > tabs
@@ -81,7 +109,7 @@ set path+=**
 " focus centre of screen (vertically) while scrolling
 set scrolloff=1337
 
-"---------- tabstop, softtabstop, shiftwidth ----------
+" tabstop, softtabstop, shiftwidth ---------------------------------------------
 " default values
 set tabstop=4
 set softtabstop=4
@@ -95,14 +123,7 @@ autocmd FileType hpp setlocal tabstop=2
 autocmd FileType hpp setlocal softtabstop=2
 autocmd FileType hpp setlocal shiftwidth=2
 
-"---------- fzf ----------
-set rtp+=~/.fzf
-
-nnoremap <C-p> :FZF<CR>
-nnoremap <leader>pb :Buffers<CR>
-nnoremap <leader>pc :BCommits<CR>
-
-"---------- search ----------
+" search -----------------------------------------------------------------------
 " case insensitive search
 set ignorecase
 
@@ -115,29 +136,10 @@ set incsearch
 " clear search highlight
 noremap <silent> <CR> :nohlsearch<CR>
 
-"---------- airline ----------
-let g:airline_theme='base16'
-
-let g:airline_section_b='%{fugitive#statusline()}'
-let g:airline_section_c='%f%m%r'
-let g:airline_section_z='%l/%L %c'
-
-"---------- nerd tree ----------
-" toggle nerdtree
-map <leader>n :NERDTreeToggle<CR>
-
-" automatically close nerdtree if it is the only window
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-"---------- git gutter ----------
-" change gitgutter removed sign from _ to -
-let g:gitgutter_sign_removed = "-"
-
-"---------- clang format ----------
+" clang format -----------------------------------------------------------------
 map <leader>c :ClangFormat<CR>
 
-"---------- toggle folding ----------
-" toggle folding key
+" toggle folding ---------------------------------------------------------------
 map <leader>f :call ToggleFolding()<CR>
 
 " toggle folding function
@@ -149,8 +151,7 @@ function! ToggleFolding()
     endif
 endfunction
 
-"---------- jump between cpp and hpp ----------
-" toggle source header key
+" jump between cpp and hpp -----------------------------------------------------
 nmap <leader>h :call ToggleSourceHeader()<CR>
 
 " toggle source header function
@@ -178,16 +179,6 @@ function ToggleSourceHeader()
      endif
 endfunc
 
-"---------- you complete me ----------
-let g:ycm_python_binary_path = '/usr/bin/python3'
-let g:ycm_extra_conf_globlist = ['~/Repositories/HULKs/nao/*']
-
-nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-"---------- echo doc ----------
-set noshowmode
-let g:echodoc#enable_at_startup=1
-
-"---------- base 16 ----------
-let base16colorspace=256  " Access colors present in 256 colorspace
+" colorscheme ------------------------------------------------------------------
+" must be at end of file
 colorscheme base16-default-dark

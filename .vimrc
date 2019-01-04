@@ -15,8 +15,8 @@ Plugin 'VundleVim/Vundle.vim'
 " auto-completion
 Plugin 'Valloric/YouCompleteMe'
 
-" search
-Plugin 'kien/ctrlp.vim'
+" fzf search
+Plugin 'junegunn/fzf.vim'
 
 " status line
 Plugin 'vim-airline/vim-airline'
@@ -95,6 +95,13 @@ autocmd FileType hpp setlocal tabstop=2
 autocmd FileType hpp setlocal softtabstop=2
 autocmd FileType hpp setlocal shiftwidth=2
 
+"---------- fzf ----------
+set rtp+=~/.fzf
+
+nnoremap <C-p> :FZF<CR>
+nnoremap <leader>pb :Buffers<CR>
+nnoremap <leader>pc :BCommits<CR>
+
 "---------- search ----------
 " case insensitive search
 set ignorecase
@@ -114,10 +121,6 @@ let g:airline_theme='base16'
 let g:airline_section_b='%{fugitive#statusline()}'
 let g:airline_section_c='%f%m%r'
 let g:airline_section_z='%l/%L %c'
-
-"---------- ctrlp ----------
-" remap ctrlp key
-let g:ctrlp_map='<leader>p'
 
 "---------- nerd tree ----------
 " toggle nerdtree

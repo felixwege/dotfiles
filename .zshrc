@@ -170,3 +170,5 @@ fi
 if [ $HULKS = true ]; then
     source ~/.aliases/hulks.sh
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

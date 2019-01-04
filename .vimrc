@@ -134,7 +134,9 @@ set hlsearch
 set incsearch
 
 " clear search highlight
-noremap <silent> <CR> :nohlsearch<CR>
+noremap <silent> <leader>/ :nohlsearch<CR>
+noremap <silent> <leader>* :nohlsearch<CR>
+noremap <silent> <leader># :nohlsearch<CR>
 
 " clang format -----------------------------------------------------------------
 map <leader>c :ClangFormat<CR>

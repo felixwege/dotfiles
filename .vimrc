@@ -2,6 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 let mapleader=","
 
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -88,6 +89,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+
 " general settings -------------------------------------------------------------
 set cursorline
 set cursorcolumn
@@ -126,6 +128,7 @@ autocmd FileType hpp setlocal tabstop=2
 autocmd FileType hpp setlocal softtabstop=2
 autocmd FileType hpp setlocal shiftwidth=2
 
+
 " clang format -----------------------------------------------------------------
 map <leader>c :ClangFormat<CR>
 
@@ -154,6 +157,7 @@ function! ToggleFolding()
     endif
 endfunction
 
+
 " jump between cpp and hpp -----------------------------------------------------
 nmap <leader>h :call ToggleSourceHeader()<CR>
 
@@ -181,6 +185,7 @@ function ToggleSourceHeader()
         endif
      endif
 endfunc
+
 
 " colorscheme ------------------------------------------------------------------
 " must be at end of file

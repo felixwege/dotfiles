@@ -60,6 +60,11 @@ bindsym $mod+s --release exec slock
 # launch alsamixer
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
+# volume control
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
+
 # lauch htop
 bindsym $mod+Ctrl+t exec terminal -e 'htop'
 

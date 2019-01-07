@@ -136,6 +136,16 @@ function fehrandr {
     fi
 }
 
+
+function md2pdf {
+    if [[ $1 == *.md ]]; then
+        # strip file extension with shell parameter expansion
+        pandoc -o ${1%.*}.pdf $1
+    else
+        echo "please give me a markdown file"
+    fi
+}
+
 # combine mkdir and cd
 function mkcd {
     mkdir $1 && cd $1

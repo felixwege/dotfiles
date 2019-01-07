@@ -117,6 +117,11 @@ set encoding=UTF-8
 set nowrap " do not wrap long lines
 set ignorecase " case insensitive search
 
+" move cursor without leaving insert mode (not very vim-esque; do not be overused)
+inoremap <C-h> <C-o>h
+inoremap <C-j> <C-o>j
+inoremap <C-k> <C-o>k
+inoremap <C-l> <C-o>l
 
 " search -----------------------------------------------------------------------
 set hlsearch " highlight search results

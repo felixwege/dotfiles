@@ -22,7 +22,7 @@ let g:ycm_extra_conf_globlist = ['~/Repositories/HULKs/nao/*']
 
 nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-" fzf.vim (search) -------------------------------------------------------------
+" fzf.vim (search for files) ---------------------------------------------------
 Plugin 'junegunn/fzf.vim'
 
 " these are independent of the fzf.vim plugin
@@ -31,6 +31,18 @@ nnoremap <C-p> :FZF<CR>
 
 nnoremap <leader>pb :Buffers<CR>
 nnoremap <leader>pc :BCommits<CR>
+
+
+" ack.vim (search in files) ----------------------------------------------------
+Plugin 'mileszs/ack.vim'
+
+" replace ack with the silver searcher (ag)
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
+" do not trim the whitespace
+nnoremap <leader>a :Ack 
 
 
 " base16-vim (color themes)

@@ -158,28 +158,28 @@ set $ws21 21
 set $ws22 22
 
 # workspace outputs
-workspace 1 output eDP1
-workspace 2 output eDP1
-workspace 3 output eDP1
-workspace 4 output eDP1
-workspace 5 output eDP1
-workspace 6 output eDP1
-workspace 7 output eDP1
-workspace 8 output eDP1
-workspace 9 output eDP1
-workspace 10 output eDP1
-workspace 11 output HDMI1 HDMI2 eDP1
-workspace 12 output HDMI1 HDMI2 eDP1
-workspace 13 output HDMI1 HDMI2 eDP1
-workspace 14 output HDMI1 HDMI2 eDP1
-workspace 15 output HDMI1 HDMI2 eDP1
-workspace 16 output HDMI1 HDMI2 eDP1
-workspace 17 output HDMI1 HDMI2 eDP1
-workspace 18 output HDMI1 HDMI2 eDP1
-workspace 19 output HDMI1 HDMI2 eDP1
-workspace 20 output HDMI1 HDMI2 eDP1
-workspace 21 output HDMI1 HDMI2 eDP1
-workspace 22 output HDMI1 HDMI2 eDP1
+workspace 1 output DisplayPort-0
+workspace 2 output DisplayPort-0
+workspace 3 output DisplayPort-0
+workspace 4 output DisplayPort-0
+workspace 5 output DisplayPort-0
+workspace 6 output DisplayPort-0
+workspace 7 output DisplayPort-0
+workspace 8 output DisplayPort-0
+workspace 9 output DisplayPort-0
+workspace 10 output DisplayPort-0
+workspace 11 output DVI-0 DisplayPort-0
+workspace 12 output DVI-0 DisplayPort-0
+workspace 13 output DVI-0 DisplayPort-0
+workspace 14 output DVI-0 DisplayPort-0
+workspace 15 output DVI-0 DisplayPort-0
+workspace 16 output DVI-0 DisplayPort-0
+workspace 17 output DVI-0 DisplayPort-0
+workspace 18 output DVI-0 DisplayPort-0
+workspace 19 output DVI-0 DisplayPort-0
+workspace 20 output DVI-0 DisplayPort-0
+workspace 21 output DVI-0 DisplayPort-0
+workspace 22 output DVI-0 DisplayPort-0
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1

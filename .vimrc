@@ -27,10 +27,10 @@ Plugin 'junegunn/fzf.vim'
 
 " these are independent of the fzf.vim plugin
 set rtp+=~/.fzf
-nnoremap <C-p> :FZF<CR>
 
-nnoremap <leader>pb :Buffers<CR>
-nnoremap <leader>pc :BCommits<CR>
+nnoremap <leader>ss :FZF<CR>
+nnoremap <leader>sb :Buffers<CR>
+nnoremap <leader>sc :BCommits<CR>
 
 
 " ack.vim (search in files) ----------------------------------------------------
@@ -69,7 +69,7 @@ Plugin 'scrooloose/nerdtree'
 
 let NERDTreeShowHidden=1
 
-map <C-n> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 

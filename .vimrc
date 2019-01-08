@@ -22,6 +22,7 @@ let g:ycm_extra_conf_globlist = ['~/Repositories/HULKs/nao/*']
 
 nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
+
 " fzf.vim (search for files) ---------------------------------------------------
 Plugin 'junegunn/fzf.vim'
 
@@ -63,6 +64,7 @@ let g:airline_section_z='%l/%L %c'
 
 " vim-airline-themes (status line themes) --------------------------------------
 Plugin 'vim-airline/vim-airline-themes'
+
 
 " nerdtree (tree explorer) -----------------------------------------------------
 Plugin 'scrooloose/nerdtree'

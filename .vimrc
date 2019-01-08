@@ -162,7 +162,7 @@ map <leader>c :ClangFormat<CR>
 
 
 " toggle wrapping --------------------------------------------------------------
-map <leader>w :call ToggleWrapping()<CR>
+map <leader>tw :call ToggleWrapping()<CR>
 
 function! ToggleWrapping()
   if(&wrap == 1)
@@ -174,7 +174,7 @@ endfunc
 
 
 " toggle folding ---------------------------------------------------------------
-map <leader>f :call ToggleFolding()<CR>
+map <leader>tf :call ToggleFolding()<CR>
 
 " toggle folding function
 function! ToggleFolding()
@@ -187,7 +187,7 @@ endfunction
 
 
 " jump between cpp and hpp -----------------------------------------------------
-nmap <leader>h :call ToggleSourceHeader()<CR>
+nmap <leader>th :call ToggleSourceHeader()<CR>
 
 " toggle source header function
 function ToggleSourceHeader()

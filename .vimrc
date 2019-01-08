@@ -126,6 +126,10 @@ inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
 inoremap <C-l> <C-o>l
 
+" new line without insert mode
+nnoremap <CR> o<Esc>
+
+
 " search -----------------------------------------------------------------------
 set hlsearch " highlight search results
 set incsearch " highlight things while searching

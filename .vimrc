@@ -117,6 +117,9 @@ set encoding=UTF-8
 set nowrap " do not wrap long lines
 set ignorecase " case insensitive search
 
+" make Y behave like D
+nnoremap Y y$
+
 " move cursor without leaving insert mode (not very vim-esque; do not be overused)
 inoremap <C-h> <C-o>h
 inoremap <C-j> <C-o>j

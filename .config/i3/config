@@ -76,8 +76,8 @@ bindsym $mod+Ctrl+t exec terminal -e 'htop'
 bindsym $mod+Ctrl+r exec terminal -e 'ranger'
 
 # screenshot keys
-bindsym $mod+Print exec maim -s /home/felix/Pictures/Screenshots/screenshot-$(date +%Y-%m-%d-%H-%M-%S).png
-bindsym $mod+ctrl+Print exec maim /home/felix/Pictures/Screenshots/screenshot-$(date +%Y-%m-%d-%H-%M-%S).png
+bindsym $mod+Print exec maim -s ~/Pictures/Screenshots/screenshot-$(date +%Y-%m-%d-%H-%M-%S).png
+bindsym $mod+ctrl+Print exec maim ~/Pictures/Screenshots/screenshot-$(date +%Y-%m-%d-%H-%M-%S).png
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run

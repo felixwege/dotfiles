@@ -138,6 +138,9 @@ inoremap <C-l> <C-o>l
 " new line without insert mode
 nnoremap <CR> o<Esc>
 
+" jump to last non-whitespace character of current line (analogous to ^, which  jumps to the first non-whitespace character)
+nnoremap _ g_
+
 
 " search -----------------------------------------------------------------------
 set hlsearch " highlight search results

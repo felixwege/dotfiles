@@ -135,8 +135,11 @@ inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
 inoremap <C-l> <C-o>l
 
-" new line without insert mode
+" new line after current line and leave insert mode
 nnoremap <CR> o<Esc>
+
+" new line before current line and leave insert mode
+nnoremap <BS> O<Esc>
 
 " jump to last non-whitespace character of current line (analogous to ^, which  jumps to the first non-whitespace character)
 nnoremap _ g_

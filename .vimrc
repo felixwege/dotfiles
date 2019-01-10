@@ -125,6 +125,7 @@ set encoding=UTF-8
 set nowrap " do not wrap long lines
 set ignorecase " case insensitive search
 
+" some custom maps --------------------------------------------------------------------
 " make Y behave like D
 nnoremap Y y$
 

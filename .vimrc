@@ -29,9 +29,7 @@ Plugin 'junegunn/fzf.vim'
 " these are independent of the fzf.vim plugin
 set rtp+=~/.fzf
 
-nnoremap <leader>ss :FZF<CR>
-nnoremap <leader>sb :Buffers<CR>
-nnoremap <leader>sc :BCommits<CR>
+nnoremap <leader>f :FZF<CR>
 
 
 " ack.vim (search in files) ----------------------------------------------------

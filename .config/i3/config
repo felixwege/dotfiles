@@ -297,12 +297,10 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-set $MENU "[f]irefox [c]lion [p]ycharm [s]potify [j]oplin [t]elegram [r]iot"
+set $MENU "[f]irefox [s]potify [j]oplin [t]elegram [r]iot"
 bindsym $mod+e mode $MENU
 mode $MENU {
     bindsym f exec firefox, mode "default"
-    bindsym c exec clion, mode "default"
-    bindsym p exec pycharm, mode "default"
     bindsym s exec spotify, mode "default"
     bindsym j exec joplin, mode "default"
     bindsym t exec telegram-desktop, mode "default"

@@ -29,7 +29,7 @@ Plugin 'junegunn/fzf.vim'
 " these are independent of the fzf.vim plugin
 set rtp+=~/.fzf
 
-nnoremap <leader>f :FZF<CR>
+nnoremap <leader>s :FZF<CR>
 
 
 " ack.vim (search in files) ----------------------------------------------------
@@ -91,7 +91,7 @@ Plugin 'tpope/vim-rhubarb'
 " vim-better-whitespace --------------------------------------------------------
 Plugin 'ntpeters/vim-better-whitespace'
 
-map <leader>sw :StripWhitespace<CR>
+map <leader>fw :StripWhitespace<CR>
 
 
 " tabular (text alignment) -----------------------------------------------------
@@ -187,7 +187,7 @@ autocmd FileType hpp setlocal shiftwidth=2
 
 
 " clang format -----------------------------------------------------------------
-map <leader>c :ClangFormat<CR>
+map <leader>fc :ClangFormat<CR>
 
 
 " toggle wrapping --------------------------------------------------------------

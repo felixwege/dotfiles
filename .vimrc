@@ -166,6 +166,9 @@ nnoremap <BS> O<Esc>j
 " jump to last non-whitespace character of current line (analogous to ^, which  jumps to the first non-whitespace character)
 nnoremap _ g_
 
+" vsplit
+nnoremap <leader>v :NERDTreeClose<CR> :vsplit<CR>
+
 
 " search -----------------------------------------------------------------------
 set hlsearch " highlight search results

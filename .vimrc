@@ -258,6 +258,25 @@ function ToggleSourceHeader()
 endfunc
 
 
+" goyo enter and leave ---------------------------------------------------------
+function! s:goyo_enter()
+    " jump to next/previous section and move current line to middle of screen
+    nmap <C-n> ]]zt
+    nmap <C-p> [[zt
+    set scrolloff=0 " restore normal scrolling behavior
+endfunction
+
+function! s:goyo_leave()
+    " jump to next/previous section
+    nmap <C-n> ]]
+    nmap <C-p> [[
+    set scrolloff=1337 " focus centre of screen (vertically) while scrolling
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+
 " colorscheme ------------------------------------------------------------------
 " must be at end of file
 colorscheme base16-default-dark

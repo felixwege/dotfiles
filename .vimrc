@@ -156,6 +156,10 @@ inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
 inoremap <C-l> <C-o>l
 
+" jump to next/previous section
+nmap <C-n> ]]
+nmap <C-p> [[
+
 " move current line to the left/bottom/top/right
 nnoremap <C-h> <<
 nnoremap <C-j> :m .+1<CR>==

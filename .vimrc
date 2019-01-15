@@ -151,6 +151,12 @@ inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
 inoremap <C-l> <C-o>l
 
+" move current line to the left/bottom/top/right
+nnoremap <C-h> <<
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+nnoremap <C-l> >>
+
 " new line after current line and leave insert mode
 nnoremap <CR> o<Esc>
 

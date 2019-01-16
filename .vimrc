@@ -208,6 +208,14 @@ autocmd FileType hpp setlocal shiftwidth=2
 map <leader>fc :ClangFormat<CR>
 
 
+"  convert github pulse (merged PRs) to markdown notes -------------------------
+map <leader>meeting :call ConvertGitHubPulseToMarkdown()<CR>
+
+function! ConvertGitHubPulseToMarkdown()
+    normal 0vt#s- $v3bhxj
+endfunction
+
+
 " toggle wrapping --------------------------------------------------------------
 map <leader>tw :call ToggleWrapping()<CR>
 

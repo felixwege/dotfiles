@@ -150,7 +150,7 @@ set ignorecase " case insensitive search
 " make Y behave like D
 nnoremap Y y$
 
-" move cursor without leaving insert mode (not very vim-esque; do not be overused)
+" move cursor without leaving insert mode (not very vim-esque; do not overused)
 inoremap <C-h> <C-o>h
 inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k

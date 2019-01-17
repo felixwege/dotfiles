@@ -154,7 +154,8 @@ nnoremap Y y$
 inoremap <C-h> <C-o>h
 inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
-inoremap <C-l> <C-o>l
+" use a instead of l to be able to append after last character
+inoremap <C-l> <C-o>a
 
 " jump to next/previous section
 nmap <C-n> ]]

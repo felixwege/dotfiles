@@ -20,7 +20,7 @@ Plugin 'Valloric/YouCompleteMe'
 let g:ycm_python_binary_path = '/usr/bin/python3'
 let g:ycm_extra_conf_globlist = ['~/Repositories/HULKs/nao/*']
 
-nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>yg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 
 " fzf.vim (search for files) ---------------------------------------------------

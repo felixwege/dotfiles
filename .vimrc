@@ -44,6 +44,9 @@ endif
 nnoremap <leader>a :Ack 
 
 
+" vim-clang-format -------------------------------------------------------------
+Plugin 'rhysd/vim-clang-format'
+
 " base16-vim (color themes) ----------------------------------------------------
 Plugin 'chriskempson/base16-vim'
 

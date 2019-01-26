@@ -117,6 +117,14 @@ let g:vim_markdown_json_frontmatter = 1
 map <leader>ft :TableFormat<CR>
 
 
+" vim-toml ---------------------------------------------------------------------
+Plugin 'cespare/vim-toml'
+
+
+" vim-json ---------------------------------------------------------------------
+Plugin 'elzr/vim-json'
+
+
 " vim-surround (change surroundings) -------------------------------------------
 Plugin 'tpope/vim-surround'
 

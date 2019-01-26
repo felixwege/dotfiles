@@ -44,7 +44,7 @@ endif
 nnoremap <leader>a :Ack 
 
 
-" base16-vim (color themes)
+" base16-vim (color themes) ----------------------------------------------------
 Plugin 'chriskempson/base16-vim'
 
 let base16colorspace=256  " Access colors present in 256 colorspace

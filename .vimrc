@@ -163,6 +163,7 @@ set scrolloff=1337 " focus centre of screen (vertically) while scrolling
 set encoding=UTF-8
 set nowrap " do not wrap long lines
 set ignorecase " case insensitive search
+set directory^=$HOME/.vim/tmp// " tmp dir for swp files
 
 " some custom maps --------------------------------------------------------------------
 " make Y behave like D

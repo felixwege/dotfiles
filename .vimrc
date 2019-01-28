@@ -171,6 +171,9 @@ set directory^=$HOME/.vim/tmp// " tmp dir for swp files
 " make Y behave like D
 nnoremap Y y$
 
+" make S behave as I expect it to behave in visual mode
+vnoremap S xgvI
+
 " move cursor without leaving insert mode (not very vim-esque; do not overused)
 inoremap <C-h> <C-o>h
 inoremap <C-j> <C-o>j

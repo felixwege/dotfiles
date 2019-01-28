@@ -129,7 +129,7 @@ Plugin 'elzr/vim-json'
 
 
 " vim-surround (change surroundings) -------------------------------------------
-Plugin 'tpope/vim-surround'
+"Plugin 'tpope/vim-surround'
 
 
 " goyo (distraction free) ------------------------------------------------------

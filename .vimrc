@@ -95,6 +95,8 @@ Plugin 'tpope/vim-rhubarb'
 " vim-better-whitespace --------------------------------------------------------
 Plugin 'ntpeters/vim-better-whitespace'
 
+let g:show_spaces_that_precede_tabs=1
+
 map <leader>fw :StripWhitespace<CR>
 
 

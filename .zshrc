@@ -68,8 +68,12 @@ ZSH_THEME="ys"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  zsh-autosuggestions
   zsh-syntax-highlighting
 )
+
+# ctrl+j to accept autosuggestions
+bindkey '^j' autosuggest-accept
 
 source $ZSH/oh-my-zsh.sh
 

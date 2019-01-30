@@ -269,6 +269,17 @@ function! ToggleFolding()
     endif
 endfunction
 
+" toggle line numbers ----------------------------------------------------------
+nmap <leader>tl :call ToggleLineNumber()<CR>
+
+function ToggleLineNumber()
+    if (&relativenumber == 1)
+        set norelativenumber
+    else
+        set relativenumber
+    endif
+endfunc
+
 
 " jump between cpp and hpp -----------------------------------------------------
 nmap <leader>th :call ToggleSourceHeader()<CR>

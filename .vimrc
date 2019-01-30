@@ -78,6 +78,10 @@ map <leader>n :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 
+" nerdcommenter (comment-in/comment-out things) --------------------------------
+Plugin 'scrooloose/nerdcommenter'
+
+
 " vim-gitgutter (show git diff in gutter) --------------------------------------
 Plugin 'airblade/vim-gitgutter'
 

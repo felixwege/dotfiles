@@ -166,6 +166,7 @@ function gms {
 # additional git aliases
 alias grl="git reflog"
 alias gdn="git diff --name-only"
+alias gdc="git diff --compact-summary"
 alias gstw="git stash show"
 
 # open terminal in current directory (single quotes are required to evaulate current pwd)

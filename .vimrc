@@ -132,6 +132,10 @@ Plugin 'cespare/vim-toml'
 Plugin 'elzr/vim-json'
 
 
+" vimtex -----------------------------------------------------------------------
+Plugin 'lervag/vimtex'
+
+
 " vim-surround (change surroundings) -------------------------------------------
 "Plugin 'tpope/vim-surround'
 

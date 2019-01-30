@@ -249,11 +249,11 @@ endfunction
 map <leader>tw :call ToggleWrapping()<CR>
 
 function! ToggleWrapping()
-  if(&wrap == 1)
-    set nowrap
-  elseif(&wrap == 0)
-    set wrap
-  endif
+    if(&wrap == 1)
+        set nowrap
+    elseif(&wrap == 0)
+        set wrap
+    endif
 endfunc
 
 

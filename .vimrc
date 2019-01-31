@@ -211,6 +211,8 @@ nnoremap _ g_
 " vsplit
 nnoremap <leader>v :NERDTreeClose<CR> :vsplit<CR>
 
+nnoremap <leader>m :! make<CR><CR>
+
 
 " search -----------------------------------------------------------------------
 set hlsearch " highlight search results
@@ -242,7 +244,7 @@ map <leader>fc :ClangFormat<CR>
 
 
 "  convert github pulse (merged PRs) to markdown notes -------------------------
-map <leader>meeting :call ConvertGitHubPulseToMarkdown()<CR>
+map <leader>pulse :call ConvertGitHubPulseToMarkdown()<CR>
 
 function! ConvertGitHubPulseToMarkdown()
     normal 0vt#s- $v3bhxj

@@ -139,6 +139,17 @@ Plugin 'elzr/vim-json'
 Plugin 'lervag/vimtex'
 
 
+" ultisnips (snippet engine) ---------------------------------------------------
+Plugin 'SirVer/ultisnips'
+
+let g:UltiSnipsExpandTrigger = '<C-j>'
+let g:UltiSnipsSnippetsDirectories = ['$HOME/.vim/bundle/vim-snippets/UltiSnips']
+
+
+" vim-snippets (collecion of snippets) -----------------------------------------
+Plugin 'honza/vim-snippets'
+
+
 " vim-surround (change surroundings) -------------------------------------------
 "Plugin 'tpope/vim-surround'
 

@@ -19,6 +19,9 @@ Plugin 'Valloric/YouCompleteMe'
 
 let g:ycm_python_binary_path = '/usr/bin/python3'
 let g:ycm_extra_conf_globlist = ['~/Repositories/HULKs/nao/*']
+let g:ycm_complete_in_comments = 1
+let g:ycm_complete_in_strings = 1
+
 
 nnoremap <leader>yg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>yf :YcmCompleter FixIt<CR>

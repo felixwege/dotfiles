@@ -185,13 +185,6 @@ nnoremap Y y$
 " make S behave as I expect it to behave in visual mode
 vnoremap S xgvI
 
-" move cursor without leaving insert mode (not very vim-esque; do not overused)
-inoremap <C-h> <C-o>h
-inoremap <C-j> <C-o>j
-inoremap <C-k> <C-o>k
-" use a instead of l to be able to append after last character
-inoremap <C-l> <C-o>a
-
 " jump to next/previous section
 nmap <C-n> ]]
 nmap <C-p> [[

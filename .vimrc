@@ -222,6 +222,9 @@ nnoremap <leader>v :NERDTreeClose<CR> :vsplit<CR>
 nnoremap <leader>m :! make<CR><CR>
 nnoremap <leader>e :tabedit<CR>
 
+" change tabs
+map K gt
+map J gT
 
 " search -----------------------------------------------------------------------
 set hlsearch " highlight search results

@@ -84,6 +84,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " nerdcommenter (comment-in/comment-out things) --------------------------------
 Plugin 'scrooloose/nerdcommenter'
 
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
 
 " vim-gitgutter (show git diff in gutter) --------------------------------------
 Plugin 'airblade/vim-gitgutter'

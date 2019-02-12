@@ -67,10 +67,10 @@ ZSH_THEME="ys"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  colored-man-pages
-  zsh-autosuggestions
-  zsh-syntax-highlighting
+    git
+    colored-man-pages
+    zsh-autosuggestions
+    zsh-syntax-highlighting
 )
 
 # ctrl+j to accept autosuggestions
@@ -118,18 +118,18 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 
 # images
 function img {
-  sxiv -r $@ >/dev/null 2>&1 &
+    sxiv -r $@ >/dev/null 2>&1 &
 }
 
 # pdf
 function pdf {
-  if [[ $1 == *.pdf ]]; then
-    evince $1 >/dev/null 2>&1 &
-  elif [[ -d $1 ]]; then
-    for f in $1/*.pdf; do
-      evince $f >/dev/null 2>&1 &
-    done
-  fi
+    if [[ $1 == *.pdf ]]; then
+        evince $1 >/dev/null 2>&1 &
+    elif [[ -d $1 ]]; then
+        for f in $1/*.pdf; do
+            evince $f >/dev/null 2>&1 &
+        done
+    fi
 }
 
 # load screen layout and set background
@@ -158,9 +158,9 @@ function mkcd {
 
 # git merge squash
 function gms {
-  trackingBranch=$1
-  git merge --squash $trackingBranch
-  git commit -m "squashed $trackingBranch"
+    trackingBranch=$1
+    git merge --squash $trackingBranch
+    git commit -m "squashed $trackingBranch"
 }
 
 # git cherry-spit

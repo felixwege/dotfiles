@@ -163,6 +163,14 @@ function gms {
   git commit -m "squashed $trackingBranch"
 }
 
+# git cherry-spit
+function gcst {
+    echo "cherry-spitting $2 onto $1"
+    git checkout $1 || { echo 'cherry-spit failed' ; return 1; }
+    git cherry-pick $2 || { return 1; }
+    git checkout -
+}
+
 # additional git aliases
 alias grl="git reflog"
 alias gdn="git diff --name-only"

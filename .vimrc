@@ -220,7 +220,6 @@ nnoremap _ g_
 
 nnoremap <leader>v :NERDTreeClose<CR> :vsplit<CR>
 nnoremap <leader>m :! make<CR><CR>
-nmap <leader>e :tabedit<CR><leader>s
 
 " change tabs
 map K gt

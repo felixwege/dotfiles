@@ -225,6 +225,10 @@ nnoremap <leader>m :! make<CR><CR>
 map K gt
 map J gT
 
+" copy selection
+vnoremap <C-c> "+y
+
+
 " search -----------------------------------------------------------------------
 set hlsearch " highlight search results
 set incsearch " highlight things while searching

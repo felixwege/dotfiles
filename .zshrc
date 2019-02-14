@@ -177,7 +177,7 @@ alias gdn="git diff --name-only"
 alias gdc="git diff --compact-summary"
 alias gstw="git stash show"
 
-# open terminal in current directory (single quotes are required to evaulate current pwd)
+# open terminal in current directory (single parenthesis is required to evaulate current pwd)
 alias here='termite -d $(pwd) > /dev/null 2>&1 &'
 
 # cd to home and clear terminal

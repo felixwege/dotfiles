@@ -253,6 +253,9 @@ autocmd FileType cpp setlocal shiftwidth=2
 autocmd FileType hpp setlocal tabstop=2
 autocmd FileType hpp setlocal softtabstop=2
 autocmd FileType hpp setlocal shiftwidth=2
+autocmd FileType sh setlocal tabstop=2
+autocmd FileType sh setlocal softtabstop=2
+autocmd FileType sh setlocal shiftwidth=2
 
 
 " clang format -----------------------------------------------------------------

@@ -276,7 +276,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # Open applications on specific workspaces
 # assign [class="Thunderbird"] $ws1
-for_window [class="Spotify"] move to workspace $ws8 # workaround because spotify is not setting hints when mapping the window
+# workaround because spotify is not setting hints when mapping the window
+for_window [class="Spotify"] move to workspace $ws8
 assign [class="Telegram"] $ws9
 assign [class="Riot"] $ws9
 

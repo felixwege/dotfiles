@@ -176,6 +176,7 @@ alias grl="git reflog"
 alias gdn="git diff --name-only"
 alias gdc="git diff --compact-summary"
 alias gstw="git stash show"
+alias gcop="git checkout --patch"
 
 # open terminal in current directory (single parenthesis is required to evaulate current pwd)
 alias here='termite -d $(pwd) > /dev/null 2>&1 &'

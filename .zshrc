@@ -165,9 +165,9 @@ function gms {
 
 # git cherry-spit
 function gcst {
-    echo "cherry-spitting $2 onto $1"
-    git checkout $1 || { echo 'cherry-spit failed' ; return 1; }
-    git cherry-pick $2 || { return 1; }
+    echo "cherry-spitting $1 onto $2"
+    git checkout $2 || { echo 'cherry-spit failed' ; return 1; }
+    git cherry-pick $1 || { return 1; }
     git checkout -
 }
 

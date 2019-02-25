@@ -165,6 +165,10 @@ function gms {
 
 # git cherry-spit
 function gcsp {
+    if [ "$#" -ne 2 ]; then
+        echo "please give me 2 parameters (a commit hash and a branch name)"
+        return 1;
+    fi
     echo "cherry-spitting $1 onto $2"
     git checkout $2 || { echo 'cherry-spit failed' ; return 1; }
     git cherry-pick $1 || { return 1; }

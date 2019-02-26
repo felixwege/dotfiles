@@ -267,8 +267,8 @@ autocmd FileType sh setlocal shiftwidth=2
 map <leader>fc :ClangFormat<CR>
 
 
-"  convert github pulse (merged PRs) to markdown notes -------------------------
-map <leader>pulse :call ConvertGitHubPulseToMarkdown()<CR>
+" convert github pulse (merged PRs) to markdown notes -------------------------
+map <leader>.pulse :call ConvertGitHubPulseToMarkdown()<CR>
 
 function! ConvertGitHubPulseToMarkdown()
     normal 0vt#s- $v3bhxj

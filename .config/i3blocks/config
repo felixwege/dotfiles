@@ -28,6 +28,10 @@ command=/usr/lib/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+[simple]
+command=~/.venv/nao/bin/python3 ~/bin/alivenessWidged.py
+interval=30
+
 # Volume indicator
 #
 # The first parameter sets the step (and units to display)

@@ -86,6 +86,9 @@ bindsym $mod+d exec dmenu_run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# start aliveness receiver
+exec ~/.venv/nao/bin/python3 ~/Repositories/HULKs/nao/scripts/alivenessReceiver.py
+
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 new_window pixel 1
 new_float normal

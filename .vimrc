@@ -18,8 +18,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 
 let g:ycm_python_binary_path = '/usr/bin/python3'
-"let g:ycm_extra_conf_globlist = ['~/.vim/.ycm_extra_conf.py', '~/Repositories/HULKs/nao/*']
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_extra_conf_globlist = ['/home/felix/.vim/.ycm_extra_conf.py', '/home/felix/Repositories/HULKs/nao/*']
 let g:ycm_confirm_extra_conf = 1
 let g:ycm_complete_in_comments = 1
 let g:ycm_complete_in_strings = 1

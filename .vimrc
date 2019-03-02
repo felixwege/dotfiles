@@ -150,7 +150,10 @@ Plugin 'lervag/vimtex'
 Plugin 'SirVer/ultisnips'
 
 let g:UltiSnipsExpandTrigger = '<C-j>'
-let g:UltiSnipsSnippetsDirectories = ['$HOME/.vim/bundle/vim-snippets/UltiSnips']
+let g:UltiSnipsSnippetDirectories = ['/home/felix/.vim/bundle/vim-snippets/UltiSnips']
+if getcwd() =~ "nao"
+  call add(g:UltiSnipsSnippetDirectories,'/home/felix/Repositories/HULKs/nao/tools/IDEPlugins/NaoSnippets')
+endif
 
 
 " vim-snippets (collecion of snippets) -----------------------------------------

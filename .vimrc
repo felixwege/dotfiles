@@ -262,6 +262,19 @@ function RunWith(command)
 endfunction
 
 
+" compile markdown file --------------------------------------------------------
+function CompileMarkdown()
+    execute ":w"
+    if(filereadable('pandoc-compose.yaml') || filereadable('pandoc-compose.yml'))
+        execute "!pandoc-compose"
+        execute "!evince $(ls | grep pdf) >/dev/null 2>&1 &"
+    else
+        execute "!pandoc -o %:t:r.pdf %:t:r.md"
+        execute "!evince %:t:r.pdf >/dev/null 2>&1 &"
+    endif
+endfunc
+
+
 " clang format -----------------------------------------------------------------
 map <leader>fc :ClangFormat<CR>
 
@@ -369,6 +382,7 @@ autocmd FileType sh setlocal tabstop=2
 autocmd FileType sh setlocal softtabstop=2
 autocmd FileType sh setlocal shiftwidth=2
 autocmd FileType python noremap <leader>r :call RunWith("python3")<CR>
+autocmd FileType markdown noremap <leader>r :call CompileMarkdown()<CR>
 
 
 " colorscheme ------------------------------------------------------------------

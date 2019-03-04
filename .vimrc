@@ -266,6 +266,13 @@ autocmd FileType sh setlocal softtabstop=2
 autocmd FileType sh setlocal shiftwidth=2
 
 
+" run command on current file --------------------------------------------------
+function RunWith(command)
+    execute "w"
+    execute "!clear; " . a:command . " " . expand("%")
+endfunction
+
+
 " clang format -----------------------------------------------------------------
 map <leader>fc :ClangFormat<CR>
 

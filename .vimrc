@@ -275,6 +275,14 @@ function CompileMarkdown()
 endfunc
 
 
+" compile latex file -----------------------------------------------------------
+function CompileLatex()
+    execute "w"
+    execute "!latexmk -pdf %:t:r.tex"
+    execute "!evince %:t:r.pdf >/dev/null 2>&1 &"
+endfunc
+
+
 " clang format -----------------------------------------------------------------
 map <leader>fc :ClangFormat<CR>
 
@@ -383,6 +391,7 @@ autocmd FileType sh setlocal softtabstop=2
 autocmd FileType sh setlocal shiftwidth=2
 autocmd FileType python noremap <leader>r :call RunWith("python3")<CR>
 autocmd FileType markdown noremap <leader>r :call CompileMarkdown()<CR>
+autocmd FileType tex noremap <leader>r :call CompileLatex()<CR>
 
 
 " colorscheme ------------------------------------------------------------------

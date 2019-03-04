@@ -368,6 +368,7 @@ autocmd FileType hpp setlocal shiftwidth=2
 autocmd FileType sh setlocal tabstop=2
 autocmd FileType sh setlocal softtabstop=2
 autocmd FileType sh setlocal shiftwidth=2
+autocmd FileType python noremap <leader>r :call RunWith("python3")<CR>
 
 
 " colorscheme ------------------------------------------------------------------

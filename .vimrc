@@ -254,17 +254,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
-" different values for c++
-autocmd FileType cpp setlocal tabstop=2
-autocmd FileType cpp setlocal softtabstop=2
-autocmd FileType cpp setlocal shiftwidth=2
-autocmd FileType hpp setlocal tabstop=2
-autocmd FileType hpp setlocal softtabstop=2
-autocmd FileType hpp setlocal shiftwidth=2
-autocmd FileType sh setlocal tabstop=2
-autocmd FileType sh setlocal softtabstop=2
-autocmd FileType sh setlocal shiftwidth=2
-
 
 " run command on current file --------------------------------------------------
 function RunWith(command)
@@ -367,6 +356,18 @@ endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+
+" filetype specific things -----------------------------------------------------
+autocmd FileType cpp setlocal tabstop=2
+autocmd FileType cpp setlocal softtabstop=2
+autocmd FileType cpp setlocal shiftwidth=2
+autocmd FileType hpp setlocal tabstop=2
+autocmd FileType hpp setlocal softtabstop=2
+autocmd FileType hpp setlocal shiftwidth=2
+autocmd FileType sh setlocal tabstop=2
+autocmd FileType sh setlocal softtabstop=2
+autocmd FileType sh setlocal shiftwidth=2
 
 
 " colorscheme ------------------------------------------------------------------

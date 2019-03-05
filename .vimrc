@@ -215,6 +215,9 @@ set scrolloff=1337 " focus centre of screen (vertically) while scrolling
 set encoding=UTF-8
 set nowrap " do not wrap long lines
 set ignorecase " case insensitive search
+set hlsearch " highlight search results
+set incsearch " highlight things while searching
+set smartcase " respect explicitly typed uppercase letters
 set wildmenu
 set hidden " hide buffers instead of closing them
 set backspace=indent,eol,start
@@ -256,12 +259,6 @@ map J gT
 
 " copy selection
 vnoremap <C-c> "+y
-
-
-" search -----------------------------------------------------------------------
-set hlsearch " highlight search results
-set incsearch " highlight things while searching
-set smartcase " respect explicitly typed uppercase letters
 
 " clear search highlight
 noremap <silent> <leader>/ :nohlsearch<CR>

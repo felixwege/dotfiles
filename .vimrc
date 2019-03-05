@@ -253,9 +253,10 @@ nnoremap _ g_
 nnoremap <leader>v :NERDTreeClose<CR> :vsplit<CR>
 nnoremap <leader>m :! make<CR><CR>
 
-" change tabs
-map K gt
-map J gT
+" change buffers
+map J :bprevious<CR>
+map K :bnext<CR>
+
 
 " copy selection
 vnoremap <C-c> "+y

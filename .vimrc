@@ -164,6 +164,16 @@ Plugin 'honza/vim-snippets'
 "Plugin 'tpope/vim-surround'
 
 
+" rainbow_parentheses.vim ------------------------------------------------------
+Plugin 'junegunn/rainbow_parentheses.vim'
+
+" activate when starting vim
+autocmd VimEnter * RainbowParentheses
+map <leader>tr :RainbowParentheses!!<CR>
+" blacklist blue, white, dark grey and light grey
+let g:rainbow#blacklist = [6, 7, 8, 15]
+
+
 " goyo (distraction free) ------------------------------------------------------
 Plugin 'junegunn/goyo.vim'
 

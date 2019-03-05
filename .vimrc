@@ -174,6 +174,10 @@ map <leader>tr :RainbowParentheses!!<CR>
 let g:rainbow#blacklist = [6, 7, 8, 15]
 
 
+" vim-cpp-enhanced-highlight ---------------------------------------------------
+Plugin 'octol/vim-cpp-enhanced-highlight'
+
+
 " goyo (distraction free) ------------------------------------------------------
 Plugin 'junegunn/goyo.vim'
 

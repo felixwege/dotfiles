@@ -242,7 +242,6 @@ nnoremap _ g_
 
 nnoremap <leader>v :NERDTreeClose<CR> :vsplit<CR>
 nnoremap <leader>m :! make<CR><CR>
-nnoremap <leader>p :! pandoc-compose<CR><CR>
 
 " change tabs
 map K gt

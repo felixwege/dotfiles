@@ -213,6 +213,7 @@ set encoding=UTF-8
 set nowrap " do not wrap long lines
 set ignorecase " case insensitive search
 set wildmenu
+set hidden " hide buffers instead of closing them
 set backspace=indent,eol,start
 set directory^=$HOME/.vim/tmp// " tmp dir for swp files
 let g:tex_flavor = "latex" " reqiured for YouCompleteMe and UltiSnips

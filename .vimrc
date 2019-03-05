@@ -258,6 +258,7 @@ vnoremap <C-c> "+y
 " search -----------------------------------------------------------------------
 set hlsearch " highlight search results
 set incsearch " highlight things while searching
+set smartcase " respect explicitly typed uppercase letters
 
 " clear search highlight
 noremap <silent> <leader>/ :nohlsearch<CR>

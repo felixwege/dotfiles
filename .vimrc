@@ -70,6 +70,9 @@ let g:airline_section_b='%{fugitive#statusline()}'
 let g:airline_section_c='%f%m%r'
 let g:airline_section_z='%l/%L %c'
 
+" display all buffers when there's only one tab open
+let g:airline#extensions#tabline#enabled = 1
+
 
 " vim-airline-themes (status line themes) --------------------------------------
 Plugin 'vim-airline/vim-airline-themes'

@@ -219,7 +219,7 @@ set directory^=$HOME/.vim/tmp// " tmp dir for swp files
 let g:tex_flavor = "latex" " reqiured for YouCompleteMe and UltiSnips
 
 " some custom maps --------------------------------------------------------------------
-" make Y behave like D
+" make Y behave like C and D
 nnoremap Y y$
 
 " make S behave as I expect it to behave in visual mode

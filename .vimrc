@@ -257,6 +257,8 @@ nnoremap <leader>m :! make<CR><CR>
 map J :bprevious<CR>
 map K :bnext<CR>
 
+" close buffer
+map Q :bdelete<CR>
 
 " copy selection
 vnoremap <C-c> "+y

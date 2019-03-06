@@ -7,3 +7,5 @@
 	autosetuprebase = always
 [rerere]
 	enable = true
+[pull]
+	rebase = true

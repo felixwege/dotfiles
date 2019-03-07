@@ -434,3 +434,9 @@ autocmd FileType tex noremap <leader>r :call CompileLatex()<CR>
 " colorscheme ------------------------------------------------------------------
 " must be at end of file
 colorscheme base16-default-dark
+
+" highlight spelling errors (this must be after the colorscheme)
+highlight SpellBad		ctermfg=Red		ctermbg=White	cterm=underline		guifg=Red	guibg=White		gui=underline
+highlight SpellCap		ctermfg=Red		ctermbg=White	cterm=underline		guifg=Red	guibg=White		gui=underline
+highlight SpellLocal	ctermfg=Red		ctermbg=White	cterm=underline		guifg=Red	guibg=White		gui=underline
+highlight SpellRare		ctermfg=Red		ctermbg=White	cterm=underline		guifg=Red	guibg=White		gui=underline

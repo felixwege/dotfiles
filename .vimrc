@@ -410,6 +410,10 @@ autocmd FileType hpp setlocal shiftwidth=2
 autocmd FileType sh setlocal tabstop=2
 autocmd FileType sh setlocal softtabstop=2
 autocmd FileType sh setlocal shiftwidth=2
+autocmd FileType xml setlocal tabstop=4
+autocmd FileType xml setlocal softtabstop=0
+autocmd FileType xml setlocal shiftwidth=4
+autocmd FileType xml setlocal noexpandtab
 autocmd FileType python noremap <leader>r :call RunWith("python3")<CR>
 autocmd FileType markdown noremap <leader>r :call CompileMarkdown()<CR>
 autocmd FileType tex noremap <leader>r :call CompileLatex()<CR>

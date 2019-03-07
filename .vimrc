@@ -212,6 +212,9 @@ set number relativenumber "absolute number for current line and relative numbers
 set showcmd " show key strokes
 set path+=**
 set scrolloff=1337 " focus centre of screen (vertically) while scrolling
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set encoding=UTF-8
 set nowrap " do not wrap long lines
 set ignorecase " case insensitive search
@@ -268,13 +271,6 @@ vnoremap <C-c> "+y
 noremap <silent> <leader>/ :nohlsearch<CR>
 noremap <silent> <leader>* :nohlsearch<CR>
 noremap <silent> <leader># :nohlsearch<CR>
-
-
-" tabstop, softtabstop, shiftwidth ---------------------------------------------
-" default values
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
 
 
 " run command on current file --------------------------------------------------

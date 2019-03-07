@@ -382,6 +382,17 @@ function ToggleSourceHeader()
 endfunc
 
 
+" toggle spell checking --------------------------------------------------------
+nmap <leader>ts :call ToggleSpellChecking()<CR>
+
+function ToggleSpellChecking()
+    if(&spell == 1)
+        set nospell
+    elseif(&spell == 0)
+        set spell
+    endif
+endfunc
+
 " goyo enter and leave ---------------------------------------------------------
 function! s:goyo_enter()
     " jump to next/previous section and move current line to middle of screen

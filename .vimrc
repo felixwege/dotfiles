@@ -219,6 +219,7 @@ set hlsearch " highlight search results
 set incsearch " highlight things while searching
 set smartcase " respect explicitly typed uppercase letters
 set wildmenu
+set spelllang=en_us
 set hidden " hide buffers instead of closing them
 set backspace=indent,eol,start
 set directory^=$HOME/.vim/tmp// " tmp dir for swp files

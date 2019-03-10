@@ -232,7 +232,7 @@ let g:tex_flavor = "latex" " reqiured for YouCompleteMe and UltiSnips
 " make Y behave like C and D
 nnoremap Y y$
 
-" make S behave as I expect it to behave in visual mode
+" make S behave like I in visual block mode
 vnoremap S xgvI
 
 " jump to next/previous section

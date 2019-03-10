@@ -319,7 +319,7 @@ bar {
 }
 
 # hide/unhide i3status bar
-bindsym $mod+b bar mode toggle
+bindsym $mod+a bar mode toggle
 
 # Theme colors
 # class                 border       background   text         indic.       child_border

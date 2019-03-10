@@ -93,7 +93,7 @@ exec ~/.venv/nao/bin/python3 ~/Repositories/HULKs/nao/scripts/alivenessReceiver.
 default_border pixel 1
 default_floating_border normal
 
-# Hide borders
+# Don't hide borders
 hide_edge_borders none
 
 # change borders

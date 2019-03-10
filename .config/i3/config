@@ -57,9 +57,6 @@ bindsym $mod+Shift+q kill
 # lock screen
 bindsym $mod+s --release exec slock
 
-# launch alsamixer
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-
 # volume control
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
@@ -68,12 +65,6 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 # screen brightness control
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
-
-# lauch htop
-bindsym $mod+Ctrl+t exec terminal -e 'htop'
-
-# launch ranger file browser
-bindsym $mod+Ctrl+r exec terminal -e 'ranger'
 
 # screenshot keys
 bindsym $mod+Print exec maim -s ~/Pictures/Screenshots/screenshot-$(date +%Y-%m-%d-%H-%M-%S).png

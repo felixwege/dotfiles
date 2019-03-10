@@ -360,38 +360,40 @@ gaps outer -2
 #smart_borders on
 
 # Press $mod+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
-set $mode_gaps gaps: [o]uter | [i]nner
-set $mode_gaps_outer outer gaps: [+/-/0] (local) | Shift + [+/-/0] (global)
-set $mode_gaps_inner inner gaps: [+/-/0] (local) | Shift + [+/-/0] (global)
-bindsym $mod+g mode "$mode_gaps"
 
-mode "$mode_gaps" {
-        bindsym o      mode "$mode_gaps_outer"
-        bindsym i      mode "$mode_gaps_inner"
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+set $GAPS_MODE "[o]uter | [i]nner"
+set $GAPS_OUTER_MODE "outer gaps: [+/-/0] (local) | Shift + [+/-/0] (global)"
+set $GAPS_INNER_MODE "inner gaps: [+/-/0] (local) | Shift + [+/-/0] (global)"
+
+bindsym $mod+g mode $GAPS_MODE
+mode $GAPS_MODE {
+    bindsym o      mode $GAPS_OUTER_MODE
+    bindsym i      mode $GAPS_INNER_MODE
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
-mode "$mode_gaps_inner" {
-        bindsym plus  gaps inner current plus 5
-        bindsym minus gaps inner current minus 5
-        bindsym 0     gaps inner current set 0
+mode $GAPS_OUTER_MODE {
+    bindsym plus  gaps inner current plus 5
+    bindsym minus gaps inner current minus 5
+    bindsym 0     gaps inner current set 0
 
-        bindsym Shift+plus  gaps inner all plus 5
-        bindsym Shift+minus gaps inner all minus 5
-        bindsym Shift+0     gaps inner all set 0
+    bindsym Shift+plus  gaps inner all plus 5
+    bindsym Shift+minus gaps inner all minus 5
+    bindsym Shift+0     gaps inner all set 0
 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
-mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
-        bindsym minus gaps outer current minus 5
-        bindsym 0     gaps outer current set 0
+mode $GAPS_INNER_MODE {
+    bindsym plus  gaps outer current plus 5
+    bindsym minus gaps outer current minus 5
+    bindsym 0     gaps outer current set 0
 
-        bindsym Shift+plus  gaps outer all plus 5
-        bindsym Shift+minus gaps outer all minus 5
-        bindsym Shift+0     gaps outer all set 0
+    bindsym Shift+plus  gaps outer all plus 5
+    bindsym Shift+minus gaps outer all minus 5
+    bindsym Shift+0     gaps outer all set 0
 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }

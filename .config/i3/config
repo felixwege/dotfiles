@@ -87,11 +87,6 @@ default_floating_border normal
 # Don't hide borders
 hide_edge_borders none
 
-# change borders
-bindsym $mod+u border none
-bindsym $mod+y border pixel 1
-bindsym $mod+n border normal
-
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -295,6 +290,20 @@ mode $EXEC_MODE {
     bindsym j exec joplin, mode "default"
     bindsym t exec telegram-desktop, mode "default"
     bindsym r exec riot-desktop, mode "default"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+set $BORDER_MODE "border style: [n]ame of container | [b]orderless | [1] pixel | [2] pixels | [3] pixels"
+bindsym $mod+b mode $BORDER_MODE
+mode $BORDER_MODE {
+    bindsym n border normal, mode "default"
+    bindsym b border none, mode "default"
+
+    bindsym 1 border pixel 1, mode "default"
+    bindsym 2 border pixel 2, mode "default"
+    bindsym 3 border pixel 3, mode "default"
+
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }

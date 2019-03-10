@@ -182,6 +182,12 @@ let g:rainbow#blacklist = [6, 7, 8, 15]
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
 
+" felixwege/semshi (python semantic highlighting) ------------------------------
+if has('nvim')
+    Plugin 'felixwege/semshi'
+endif
+
+
 " goyo (distraction free) ------------------------------------------------------
 Plugin 'junegunn/goyo.vim'
 

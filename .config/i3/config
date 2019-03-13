@@ -83,8 +83,8 @@ bindsym $mod+d exec dmenu_run
 exec ~/.venv/nao/bin/python3 ~/Repositories/HULKs/nao/scripts/alivenessReceiver.py
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 2
-default_floating_border normal
+new_window pixel 2
+new_float normal
 
 # Don't hide borders
 hide_edge_borders none

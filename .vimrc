@@ -306,6 +306,14 @@ function CompileLatex()
 endfunc
 
 
+" compile graph (dot languate) file --------------------------------------------
+function CompileGraph()
+    execute "w"
+    execute "!dot -Tpdf %:t:r.dot > %:t:r.pdf"
+    "execute "!evince %:t:r.pdf >/dev/null 2>&1 &"
+endfunc
+
+
 " clang format -----------------------------------------------------------------
 map <leader>fc :ClangFormat<CR>
 
@@ -430,6 +438,8 @@ autocmd FileType xml setlocal noexpandtab
 autocmd FileType python noremap <leader>r :call RunWith("python3")<CR>
 autocmd FileType markdown noremap <leader>r :call CompileMarkdown()<CR>
 autocmd FileType tex noremap <leader>r :call CompileLatex()<CR>
+autocmd FileType dot noremap <leader>r :call CompileGraph()<CR>
+autocmd FileType gz noremap <leader>r :call CompileGraph()<CR>
 
 
 " colorscheme ------------------------------------------------------------------

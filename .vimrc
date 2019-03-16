@@ -290,10 +290,10 @@ function CompileMarkdown()
     execute ":w"
     if(filereadable('pandoc-compose.yaml') || filereadable('pandoc-compose.yml'))
         execute "!pandoc-compose"
-        execute "!evince $(ls | grep pdf) >/dev/null 2>&1 &"
+        "execute "!evince $(ls | grep pdf) >/dev/null 2>&1 &"
     else
         execute "!pandoc -o %:t:r.pdf %:t:r.md"
-        execute "!evince %:t:r.pdf >/dev/null 2>&1 &"
+        "execute "!evince %:t:r.pdf >/dev/null 2>&1 &"
     endif
 endfunc
 
@@ -302,7 +302,7 @@ endfunc
 function CompileLatex()
     execute "w"
     execute "!latexmk -pdf %:t:r.tex"
-    execute "!evince %:t:r.pdf >/dev/null 2>&1 &"
+    "execute "!evince %:t:r.pdf >/dev/null 2>&1 &"
 endfunc
 
 

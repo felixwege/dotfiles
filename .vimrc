@@ -211,6 +211,7 @@ filetype plugin indent on    " required
 " general settings -------------------------------------------------------------
 set cursorline
 set cursorcolumn
+set guicursor=
 set expandtab " spaces > tabs
 syntax enable
 set number relativenumber "absolute number for current line and relative numbers for all other lines

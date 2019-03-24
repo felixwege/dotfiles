@@ -254,8 +254,8 @@ nnoremap <C-l> >>
 " new line after current line and leave insert mode
 nnoremap <CR> o<Esc>
 
-" new line before current line, leave insert mode and move back to previous line
-nnoremap <BS> O<Esc>j
+" backspace moves to the left and deletes
+nnoremap <BS> hx
 
 " jump to last non-whitespace character of current line (analogous to ^, which  jumps to the first non-whitespace character)
 nnoremap _ g_

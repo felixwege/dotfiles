@@ -55,6 +55,11 @@ nnoremap <leader>a :Ack
 " vim-clang-format -------------------------------------------------------------
 Plugin 'rhysd/vim-clang-format'
 
+
+" vim-yapf ---------------------------------------------------------------------
+Plugin 'mindriot101/vim-yapf'
+
+
 " base16-vim (color themes) ----------------------------------------------------
 Plugin 'chriskempson/base16-vim'
 
@@ -318,6 +323,10 @@ endfunc
 
 " clang format -----------------------------------------------------------------
 map <leader>fc :ClangFormat<CR>
+
+
+" yapf ------------------------------------------------------------------------
+nnoremap <leader>fp :call Yapf()<cr>
 
 
 " convert github pulse (merged PRs) to markdown notes -------------------------

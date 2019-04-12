@@ -284,6 +284,8 @@ noremap <silent> <leader>/ :nohlsearch<CR>
 noremap <silent> <leader>* :nohlsearch<CR>
 noremap <silent> <leader># :nohlsearch<CR>
 
+vnoremap <leader>s :sort<CR>
+
 
 " run command on current file --------------------------------------------------
 function RunWith(command)

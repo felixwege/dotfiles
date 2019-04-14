@@ -174,6 +174,14 @@ Plugin 'honza/vim-snippets'
 "Plugin 'tpope/vim-surround'
 
 
+" switch.vim (toggle boolean) --------------------------------------------------
+Plugin 'AndrewRadev/switch.vim'
+
+" disable default mapping
+let g:switch_mapping = ""
+
+map <leader>tb :call switch#Switch()<CR>
+
 " rainbow_parentheses.vim ------------------------------------------------------
 Plugin 'junegunn/rainbow_parentheses.vim'
 

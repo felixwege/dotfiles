@@ -160,7 +160,7 @@ function mkcd {
 # git merge squash
 function gms {
     trackingBranch=$1
-    git merge --squash $trackingBranch
+    git merge --squash $trackingBranch || { echo 'merge-squashing failed' ; return 1; }
     git commit -m "squashed $trackingBranch"
 }
 

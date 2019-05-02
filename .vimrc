@@ -294,6 +294,21 @@ noremap <silent> <leader># :nohlsearch<CR>
 
 vnoremap <leader>s :sort<CR>
 
+" scroll quarter of the screen up or down (yes, I know that the order is
+" reversed compared to the default vim bindings)
+nnoremap <C-y> :call ScrollQuarterScreen('down')<CR>
+nnoremap <C-e> :call ScrollQuarterScreen('up')<CR>
+
+
+" scroll a quarter of the screen up or down ------------------------------------
+function ScrollQuarterScreen(direction)
+    if a:direction == 'down'
+        execute 'normal! ' . winheight(0)/4 . 'j'
+    else
+        execute 'normal! ' . winheight(0)/4 . 'k'
+    endif
+endfunction
+
 
 " run command on current file --------------------------------------------------
 function RunWith(command)

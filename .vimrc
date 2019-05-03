@@ -182,6 +182,12 @@ let g:switch_mapping = ""
 
 map <leader>tb :call switch#Switch()<CR>
 
+
+" machakann/vim-swap (swap delimited items) ------------------------------------
+
+Plugin 'machakann/vim-swap'
+
+
 " rainbow_parentheses.vim ------------------------------------------------------
 Plugin 'junegunn/rainbow_parentheses.vim'
 

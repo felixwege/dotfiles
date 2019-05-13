@@ -40,17 +40,11 @@ nnoremap <leader>s :Files<CR>
 nnoremap <leader>b :Buffers<CR>
 
 
-" ack.vim (search in files) ----------------------------------------------------
-Plugin 'mileszs/ack.vim'
-
-" replace ack with the silver searcher (ag)
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
+" vim-ripgrep ------------------------------------------------------------------
+Plugin 'jremmen/vim-ripgrep'
 
 " do not trim the whitespace
-nnoremap <leader>a :Ack 
-
+nnoremap <leader>a :Rg 
 
 " vim-clang-format -------------------------------------------------------------
 Plugin 'rhysd/vim-clang-format'

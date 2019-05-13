@@ -93,6 +93,9 @@ source $ZSH/oh-my-zsh.sh
 # ctrl+j to accept autosuggestions
 bindkey '^j' autosuggest-accept
 
+ZSH_HIGHLIGHT_STYLES[path]=none
+ZSH_HIGHLIGHT_STYLES[path_prefix]=none
+
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 

@@ -74,9 +74,6 @@ plugins=(
     zsh-syntax-highlighting
 )
 
-# ctrl+j to accept autosuggestions
-bindkey '^j' autosuggest-accept
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -92,6 +89,9 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+
+# ctrl+j to accept autosuggestions
+bindkey '^j' autosuggest-accept
 
 export VISUAL=nvim
 export EDITOR="$VISUAL"

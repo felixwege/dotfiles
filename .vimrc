@@ -461,12 +461,14 @@ endfunc
 
 " goyo enter and leave ---------------------------------------------------------
 function! s:goyo_enter()
+    Limelight
     " jump to next/previous section and move current line to middle of screen
     nmap <C-n> ]]zt
     nmap <C-p> [[zt
 endfunction
 
 function! s:goyo_leave()
+    Limelight!
     " jump to next/previous section
     nmap <C-n> ]]
     nmap <C-p> [[

@@ -219,6 +219,8 @@ endif
 " goyo (distraction free) ------------------------------------------------------
 Plugin 'junegunn/goyo.vim'
 
+let g:goyo_width = 100
+let g:goyo_height = 50
 
 
 " All of your Plugins must be added before the following line

@@ -280,6 +280,9 @@ vnoremap S xgvI
 nmap <C-n> ]]
 nmap <C-p> [[
 
+" single guillements move current line to the left/right
+noremap < <<
+noremap > >>
 
 " new line after current line and leave insert mode
 nnoremap <CR> o<Esc>

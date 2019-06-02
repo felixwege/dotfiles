@@ -275,6 +275,16 @@ nmap <C-p> [[
 noremap < <<
 noremap > >>
 
+" insert closing brackets etc.
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap < <><left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
 " new line after current line and leave insert mode
 nnoremap <CR> o<Esc>
 

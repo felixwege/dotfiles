@@ -280,11 +280,6 @@ vnoremap S xgvI
 nmap <C-n> ]]
 nmap <C-p> [[
 
-" move current line to the left/bottom/top/right
-nnoremap <C-h> <<
-nnoremap <C-j> :m .+1<CR>==
-nnoremap <C-k> :m .-2<CR>==
-nnoremap <C-l> >>
 
 " new line after current line and leave insert mode
 nnoremap <CR> o<Esc>

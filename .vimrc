@@ -1,6 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-let mapleader=","
+let mapleader=" " " space bar
 
 
 " set the runtime path to include Vundle and initialize

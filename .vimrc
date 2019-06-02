@@ -187,19 +187,6 @@ map <leader>tb :call switch#Switch()<CR>
 Plugin 'machakann/vim-swap'
 
 
-" terryma/vim-multiple-cursors -------------------------------------------------
-Plugin 'terryma/vim-multiple-cursors'
-
-let g:multi_cursor_start_word_key      = '<C-m>'
-let g:multi_cursor_select_all_word_key = '<A-m>'
-let g:multi_cursor_start_key           = 'g<C-m>'
-let g:multi_cursor_select_all_key      = 'g<A-m>'
-let g:multi_cursor_next_key            = '<C-n>'
-let g:multi_cursor_prev_key            = '<C-p>'
-let g:multi_cursor_skip_key            = '<C-x>'
-let g:multi_cursor_quit_key            = '<Esc>'
-
-
 " rainbow_parentheses.vim ------------------------------------------------------
 Plugin 'junegunn/rainbow_parentheses.vim'
 

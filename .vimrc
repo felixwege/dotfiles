@@ -44,7 +44,7 @@ nnoremap <leader>b :Buffers<CR>
 Plugin 'jremmen/vim-ripgrep'
 
 " do not trim the whitespace
-nnoremap <leader>a :Rg 
+nnoremap <leader>r :Rg 
 
 " vim-clang-format -------------------------------------------------------------
 Plugin 'rhysd/vim-clang-format'

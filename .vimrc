@@ -206,6 +206,10 @@ if has('nvim')
 endif
 
 
+" mboughaba/i3config.vim (i3 config syntax highlighting) -----------------------
+Plugin 'mboughaba/i3config.vim'
+
+
 " goyo (distraction free) ------------------------------------------------------
 Plugin 'junegunn/goyo.vim'
 
@@ -489,6 +493,12 @@ autocmd FileType markdown noremap <leader>e :call CompileMarkdown()<CR>
 autocmd FileType tex noremap <leader>e :call CompileLatex()<CR>
 autocmd FileType dot noremap <leader>e :call CompileGraph()<CR>
 autocmd FileType gz noremap <leader>e :call CompileGraph()<CR>
+
+" enable i3 config syntax highlighting
+augroup i3config_ft_detection
+    autocmd!
+    autocmd BufNewFile,BufRead */i3/config set filetype=i3config
+augroup end
 
 
 " colorscheme ------------------------------------------------------------------

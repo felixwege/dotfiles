@@ -80,6 +80,9 @@ bindsym $mod+d exec dmenu_run
 # start aliveness receiver
 exec ~/.venv/nao/bin/python3 ~/Repositories/HULKs/nao/scripts/alivenessReceiver.py
 
+# start alternating_layouts script
+exec --no-startup-id ~/.venv/i3/bin/python3 ~/i3-scripts/i3-alternating-layout/alternating_layouts.py
+
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 1
 default_floating_border normal

@@ -304,6 +304,9 @@ noremap <silent> <leader># :nohlsearch<CR>
 
 vnoremap <leader>s :sort<CR>
 
+" align current paragraph
+noremap <leader>fa =ip
+
 " scroll quarter of the screen up or down (yes, I know that the order is
 " reversed compared to the default vim bindings)
 nnoremap <C-y> :call ScrollQuarterScreen('down')<CR>

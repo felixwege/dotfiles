@@ -484,11 +484,11 @@ autocmd FileType xml setlocal tabstop=4
 autocmd FileType xml setlocal softtabstop=0
 autocmd FileType xml setlocal shiftwidth=4
 autocmd FileType xml setlocal noexpandtab
-autocmd FileType python noremap <leader>r :call RunWith("python3")<CR>
-autocmd FileType markdown noremap <leader>r :call CompileMarkdown()<CR>
-autocmd FileType tex noremap <leader>r :call CompileLatex()<CR>
-autocmd FileType dot noremap <leader>r :call CompileGraph()<CR>
-autocmd FileType gz noremap <leader>r :call CompileGraph()<CR>
+autocmd FileType python noremap <leader>e :call RunWith("python3")<CR>
+autocmd FileType markdown noremap <leader>e :call CompileMarkdown()<CR>
+autocmd FileType tex noremap <leader>e :call CompileLatex()<CR>
+autocmd FileType dot noremap <leader>e :call CompileGraph()<CR>
+autocmd FileType gz noremap <leader>e :call CompileGraph()<CR>
 
 
 " colorscheme ------------------------------------------------------------------

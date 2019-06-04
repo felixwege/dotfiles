@@ -70,12 +70,10 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 bindsym $mod+Print exec maim -s --hidecursor ~/Pictures/Screenshots/screenshot-$(date +%Y-%m-%d-%H-%M-%S).png
 bindsym $mod+ctrl+Print exec maim --hidecursor ~/Pictures/Screenshots/screenshot-$(date +%Y-%m-%d-%H-%M-%S).png
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+# start rofi run with "o" as in R[un]Ofi
+bindsym $mod+o exec rofi -show run
+# start rofi window with "i" as in roF[ind window]I
+bindsym $mod+i exec rofi -show window
 
 # start aliveness receiver
 exec ~/.venv/nao/bin/python3 ~/Repositories/HULKs/nao/scripts/alivenessReceiver.py

@@ -88,6 +88,9 @@ default_floating_border normal
 # Don't hide borders
 hide_edge_borders none
 
+# don't wrap focus
+focus_wrapping no
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down

@@ -221,6 +221,10 @@ let g:goyo_height = 50
 Plugin 'junegunn/limelight.vim'
 
 
+" BufOnly (delete all buffers extept the curent one with :BufOnly) -------------
+Plugin 'vim-scripts/BufOnly.vim'
+
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

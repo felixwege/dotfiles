@@ -278,6 +278,8 @@ vnoremap S xgvI
 " jump to next/previous section
 nmap <C-n> ]]
 nmap <C-p> [[
+vmap <C-n> ]]
+vmap <C-p> [[
 
 " single guillements move current line to the left/right
 noremap < <<

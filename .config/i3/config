@@ -289,14 +289,16 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-set $EXEC_MODE "[f]irefox | [s]potify | [j]oplin | [t]elegram | [r]iot"
+set $EXEC_MODE "[f]irefox | [s]potify | [t]elegram | [r]iot | [h]top | [n]mtui | ran[g]er"
 bindsym $mod+e mode $EXEC_MODE
 mode $EXEC_MODE {
     bindsym f exec firefox, mode "default"
     bindsym s exec spotify, mode "default"
-    bindsym j exec joplin, mode "default"
     bindsym t exec telegram-desktop, mode "default"
     bindsym r exec riot-desktop, mode "default"
+    bindsym h exec termite -e htop, mode "default"
+    bindsym n exec termite -e nmtui, mode "default"
+    bindsym g exec termite -e ranger, mode "default"
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }

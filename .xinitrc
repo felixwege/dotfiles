@@ -6,4 +6,5 @@ setxkbmap -option compose:rctrl
 xinput --disable 12
 ~/xbanish/xbanish &
 nm-applet &
+compton &
 exec i3

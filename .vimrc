@@ -318,6 +318,9 @@ noremap <silent> <leader>/ :nohlsearch<CR>
 noremap <silent> <leader>* :nohlsearch<CR>
 noremap <silent> <leader># :nohlsearch<CR>
 
+
+nnoremap <leader>gb :Gblame<CR>
+
 vnoremap <leader>s :sort<CR>
 
 " align current paragraph

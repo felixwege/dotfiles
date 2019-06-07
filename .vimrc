@@ -306,6 +306,10 @@ map K :bnext<CR>
 " close buffer
 map Q :bdelete<CR>
 
+nnoremap <leader>w :w
+nnoremap <leader>q :q
+nnoremap <leader>e :e
+
 " copy selection
 vnoremap <C-c> "+y
 

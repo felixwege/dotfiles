@@ -85,7 +85,7 @@ exec --no-startup-id ~/.venv/i3/bin/python3 ~/i3-scripts/i3-alternating-layout/a
 exec_always ~/.fehbg
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 1
+default_border pixel 4
 default_floating_border normal
 
 # Don't hide borders

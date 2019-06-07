@@ -323,6 +323,9 @@ nnoremap <leader>v :NERDTreeClose<CR> :vsplit<CR>
 nnoremap <leader>h :NERDTreeClose<CR> :split<CR>
 nnoremap <leader>m :! make<CR><CR>
 
+" substitute word under cursor
+nnoremap <leader>r :%s/\<<C-r><C-w>\>//g<Left><Left><Paste>
+
 " change buffers
 map J :bprevious<CR>
 map K :bnext<CR>

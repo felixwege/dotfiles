@@ -41,11 +41,35 @@ nnoremap <leader>bu :Buffers<CR>
 nnoremap <leader>bc :BCommits<CR>
 
 
-" vim-ripgrep ------------------------------------------------------------------
-Plugin 'jremmen/vim-ripgrep'
+" ctrlsf.vim (Sublime-like search window using ripgrep) ------------------------
+Plugin 'dyng/ctrlsf.vim'
 
-" do not trim the whitespace
-nnoremap <leader>r :Rg 
+" search for pattern (do not trim the whitespace, press Enter to search for word under cursor)
+nnoremap <leader>r :CtrlSF 
+" search for visual selection
+vmap <leader>r <Plug>CtrlSFVwordExec
+
+" always use ripgrep if it exists
+if (executable('rg'))
+    let g:ctrlsf_ackprg = '/usr/bin/rg'
+endif
+
+let g:ctrlsf_mapping = {
+    \ "next": "n",
+    \ "prev": "N",
+    \ }
+
+" switch focus to ctrlsf window
+let g:ctrlsf_auto_focus = {
+    \ "at": "start"
+    \ }
+
+" don't close ctrlsf window
+let g:ctrlsf_auto_close = {
+    \ "normal" : 0,
+    \ "compact": 0
+    \}
+
 
 " vim-clang-format -------------------------------------------------------------
 Plugin 'rhysd/vim-clang-format'

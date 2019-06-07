@@ -115,7 +115,7 @@ bindsym $mod+Shift+w move container to workspace back_and_forth; workspace back_
 bindsym $mod+v split toggle
 
 # toggle between tabbed and splith layout
-bindsym $mod+t layout toggle tabbed splith
+bindsym $mod+t layout toggle tabbed split
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+m fullscreen toggle

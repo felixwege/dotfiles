@@ -470,6 +470,7 @@ function ToggleSpellChecking()
     endif
 endfunc
 
+
 " goyo enter and leave ---------------------------------------------------------
 function! s:goyo_enter()
     Limelight

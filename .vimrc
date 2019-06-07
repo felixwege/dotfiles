@@ -37,7 +37,8 @@ Plugin 'junegunn/fzf.vim'
 set rtp+=~/.fzf
 
 nnoremap <leader>s :Files<CR>
-nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>bu :Buffers<CR>
+nnoremap <leader>bc :BCommits<CR>
 
 
 " vim-ripgrep ------------------------------------------------------------------

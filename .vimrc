@@ -204,7 +204,7 @@ Plugin 'AndrewRadev/switch.vim'
 " disable default mapping
 let g:switch_mapping = ""
 
-map <leader>tb :call switch#Switch()<CR>
+map <leader>~ :call switch#Switch()<CR>
 
 
 " machakann/vim-swap (swap delimited items) ------------------------------------

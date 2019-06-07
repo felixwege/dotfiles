@@ -296,6 +296,7 @@ nnoremap <BS> hx
 nnoremap _ g_
 
 nnoremap <leader>v :NERDTreeClose<CR> :vsplit<CR>
+nnoremap <leader>h :NERDTreeClose<CR> :split<CR>
 nnoremap <leader>m :! make<CR><CR>
 
 " change buffers

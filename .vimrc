@@ -45,9 +45,9 @@ nnoremap <leader>bc :BCommits<CR>
 Plugin 'dyng/ctrlsf.vim'
 
 " search for pattern (do not trim the whitespace, press Enter to search for word under cursor)
-nnoremap <leader>r :CtrlSF 
+nnoremap <leader>a :CtrlSF 
 " search for visual selection
-vmap <leader>r <Plug>CtrlSFVwordExec
+vmap <leader>a <Plug>CtrlSFVwordExec
 
 " always use ripgrep if it exists
 if (executable('rg'))

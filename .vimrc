@@ -110,7 +110,8 @@ Plugin 'scrooloose/nerdtree'
 
 let NERDTreeShowHidden=1
 
-map <leader>n :NERDTreeToggle<CR>
+map <leader>nt :NERDTreeToggle<CR>
+map <leader>nf :NERDTreeFind<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 

@@ -329,15 +329,15 @@ bar {
     strip_workspace_numbers yes
     colors {
         background $term_background
-        statusline $term_color7
-        separator  $term_color8
+        statusline $term_foreground
+        separator  $term_foreground
 
-#                          border       background   text
-        focused_workspace  $term_color8 $term_color4 $term_color8
-        active_workspace   $term_color8 $term_color3 $term_color8
-        inactive_workspace $term_color8 $term_color0 $term_color7
-        binding_mode       $term_color8 $term_color4 $term_color8
-        urgent_workspace   $term_color8 $term_color1 $term_color7
+#                          border           background       text
+        focused_workspace  $term_foreground $term_foreground $term_background
+        active_workspace   $term_background $term_background $term_foreground
+        inactive_workspace $term_background $term_background $term_foreground
+        binding_mode       $term_background $term_background $term_foreground
+        urgent_workspace   $term_background $term_background $term_foreground
     }
 }
 
@@ -345,13 +345,13 @@ bar {
 bindsym $mod+a bar mode toggle
 
 # Theme colors
-# class                 border       background   text         indic.       child_border
-client.focused          $term_color8 $term_color4 $term_color8 $term_color8
-client.focused_inactive $term_color8 $term_color0 $term_color7 $term_color8
-client.unfocused        $term_color8 $term_color0 $term_color7 $term_color8
-client.urgent           $term_color8 $term_color1 $term_color7 $term_color8
-client.placeholder      $term_color8 $term_color0 $term_color7 $term_color8
-client.background       $term_background
+# class                    border           background       text             indic.           child_border
+client.focused             $term_foreground $term_foreground $term_background $term_foreground $term_foreground
+client.focused_inactive    $term_background $term_background $term_foreground $term_background $term_background
+client.unfocused           $term_background $term_background $term_foreground $term_background $term_background
+client.urgent              $term_color1     $term_color1     $term_background $term_color1     $term_color1
+client.placeholder         $term_background $term_background $term_background $term_background $term_background
+client.background          $term_background
 
 #############################
 ### settings for i3-gaps: ###

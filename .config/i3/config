@@ -333,10 +333,10 @@ bar {
         separator  $term_color8
 
 #                          border       background   text
-        focused_workspace  $term_color8 $term_color6 $term_color8
+        focused_workspace  $term_color8 $term_color4 $term_color8
         active_workspace   $term_color8 $term_color3 $term_color8
         inactive_workspace $term_color8 $term_color0 $term_color7
-        binding_mode       $term_color8 $term_color6 $term_color8
+        binding_mode       $term_color8 $term_color4 $term_color8
         urgent_workspace   $term_color8 $term_color1 $term_color7
     }
 }
@@ -346,11 +346,11 @@ bindsym $mod+a bar mode toggle
 
 # Theme colors
 # class                 border       background   text         indic.       child_border
-client.focused          $term_color8 $term_color6 $term_color8
-client.focused_inactive $term_color8 $term_color0 $term_color7
-client.unfocused        $term_color8 $term_color0 $term_color7
-client.urgent           $term_color8 $term_color1 $term_color7
-client.placeholder      $term_color8 $term_color0 $term_color7
+client.focused          $term_color8 $term_color4 $term_color8 $term_color8
+client.focused_inactive $term_color8 $term_color0 $term_color7 $term_color8
+client.unfocused        $term_color8 $term_color0 $term_color7 $term_color8
+client.urgent           $term_color8 $term_color1 $term_color7 $term_color8
+client.placeholder      $term_color8 $term_color0 $term_color7 $term_color8
 client.background       $term_background
 
 #############################

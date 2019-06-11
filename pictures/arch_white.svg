@@ -16,8 +16,8 @@
    width="3840"
    height="2160"
    viewBox="0 0 3840 2160"
-   sodipodi:docname="arch.svg"
-   inkscape:version="0.92.2 2405546, 2018-03-11">
+   sodipodi:docname="arch_white.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
   <metadata
      id="metadata16">
     <rdf:RDF>
@@ -50,12 +50,12 @@
      guidetolerance="10"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:window-width="2534"
-     inkscape:window-height="1390"
+     inkscape:window-width="2528"
+     inkscape:window-height="1384"
      id="namedview12"
      showgrid="false"
-     inkscape:zoom="7.552"
-     inkscape:cx="1912.1609"
+     inkscape:zoom="0.236"
+     inkscape:cx="1888.1937"
      inkscape:cy="1511.4922"
      inkscape:window-x="12"
      inkscape:window-y="36"
@@ -63,7 +63,7 @@
      inkscape:current-layer="svg10"
      inkscape:pagecheckerboard="false" />
   <rect
-     style="fill:#282828;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="rect4547"
      width="3840"
      height="2160"

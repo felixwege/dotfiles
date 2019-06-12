@@ -1,11 +1,11 @@
 ! special
 *.foreground:   #E8E8E8
-*.background:   #282828
-*.cursorColor:  #E8E8E8
+*.background:   #181818
+*.cursorColor:  #D8D8D8
 
 ! black
-*.color0:       #282828
-*.color8:       #383838
+*.color0:       #181818
+*.color8:       #585858
 
 ! red
 *.color1:       #AB4642
@@ -34,3 +34,11 @@
 ! white
 *.color7:       #D8D8D8
 *.color15:      #F8F8F8
+
+! extra
+*.color16:      #DC9656
+*.color17:      #A16946
+*.color18:      #282828
+*.color19:      #383838
+*.color20:      #B8B8B8
+*.color21:      #E8E8E8

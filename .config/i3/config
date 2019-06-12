@@ -44,6 +44,12 @@ set_from_resource $term_color12    color12
 set_from_resource $term_color13    color13
 set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
+set_from_resource $term_color16    color16
+set_from_resource $term_color17    color17
+set_from_resource $term_color18    color18
+set_from_resource $term_color19    color19
+set_from_resource $term_color20    color20
+set_from_resource $term_color21    color21
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod

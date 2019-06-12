@@ -81,6 +81,8 @@ bindsym $mod+o exec rofi -show run
 # start rofi window with "i" as in roF[ind window]I
 bindsym $mod+i exec rofi -show window
 
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 # start aliveness receiver
 exec ~/.venv/nao/bin/python3 ~/Repositories/HULKs/nao/scripts/alivenessReceiver.py
 

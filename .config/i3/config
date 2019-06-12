@@ -325,28 +325,6 @@ mode $BORDER_MODE {
     bindsym Escape mode "default"
 }
 
-# Start i3bar to display a workspace bar (plus the system information i3status if available)
-bar {
-    status_command i3blocks
-    position top
-    strip_workspace_numbers yes
-    colors {
-        background $term_background
-        statusline $term_foreground
-        separator  $term_foreground
-
-#                          border           background       text
-        focused_workspace  $term_foreground $term_foreground $term_background
-        active_workspace   $term_background $term_background $term_foreground
-        inactive_workspace $term_background $term_background $term_foreground
-        binding_mode       $term_background $term_background $term_foreground
-        urgent_workspace   $term_background $term_background $term_foreground
-    }
-}
-
-# hide/unhide i3status bar
-bindsym $mod+a bar mode toggle
-
 # Theme colors
 # class                    border           background       text             indic.           child_border
 client.focused             $term_foreground $term_foreground $term_background $term_foreground $term_foreground

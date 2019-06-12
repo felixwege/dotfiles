@@ -308,24 +308,7 @@ mode $EXEC_MODE {
     bindsym Escape mode "default"
 }
 
-set $BORDER_MODE "border style: [n]ame of container | [b]orderless | [1]-[8] pixel(s)"
-bindsym $mod+b mode $BORDER_MODE
-mode $BORDER_MODE {
-    bindsym n border normal, mode "default"
-    bindsym b border none, mode "default"
-
-    bindsym 1 border pixel 1, mode "default"
-    bindsym 2 border pixel 2, mode "default"
-    bindsym 3 border pixel 3, mode "default"
-    bindsym 4 border pixel 4, mode "default"
-    bindsym 5 border pixel 5, mode "default"
-    bindsym 6 border pixel 6, mode "default"
-    bindsym 7 border pixel 7, mode "default"
-    bindsym 8 border pixel 8, mode "default"
-
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
+bindsym $mod+b border toggle 3
 
 # Theme colors
 # class                    border           background       text             indic.           child_border

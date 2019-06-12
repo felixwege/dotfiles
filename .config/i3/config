@@ -117,7 +117,8 @@ bindsym $mod+w workspace back_and_forth
 bindsym $mod+Shift+w move container to workspace back_and_forth; workspace back_and_forth
 
 # toggle between horizontal and vertical split
-bindsym $mod+v split toggle
+bindsym $mod+v splitv
+bindsym $mod+z splith
 
 # toggle between tabbed and splith layout
 bindsym $mod+t layout toggle tabbed split

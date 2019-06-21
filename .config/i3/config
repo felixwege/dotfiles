@@ -115,6 +115,7 @@ bindsym $mod+Shift+l move right
 #workspace_auto_back_and_forth yes
 bindsym $mod+w workspace back_and_forth
 bindsym $mod+Shift+w move container to workspace back_and_forth; workspace back_and_forth
+bindsym $mod+Ctrl+w move container to workspace back_and_forth
 
 # toggle between horizontal and vertical split
 bindsym $mod+v splitv

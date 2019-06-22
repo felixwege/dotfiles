@@ -126,6 +126,7 @@ let g:NERDDefaultAlign = 'left'
 Plugin 'airblade/vim-gitgutter'
 
 let g:gitgutter_sign_removed = "-"
+let g:gitgutter_map_keys = 0
 
 
 " vim-fugitive (git wrapper) ---------------------------------------------------

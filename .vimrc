@@ -547,8 +547,8 @@ augroup end
 colorscheme base16-default-dark
 
 " highlight spelling errors (this must be after the colorscheme)
-highlight SpellBad		ctermfg=Red		ctermbg=White	cterm=underline		guifg=Red	guibg=White		gui=underline
-highlight SpellCap		ctermfg=Red		ctermbg=White	cterm=underline		guifg=Red	guibg=White		gui=underline
-highlight SpellLocal	ctermfg=Red		ctermbg=White	cterm=underline		guifg=Red	guibg=White		gui=underline
-highlight SpellRare		ctermfg=Red		ctermbg=White	cterm=underline		guifg=Red	guibg=White		gui=underline
-hi illuminatedWord      ctermfg=Black	ctermbg=Blue                        guifg=Black	guibg=Blue
+highlight SpellBad        ctermfg=Red   ctermbg=White cterm=underline guifg=Red   guibg=White gui=underline
+highlight SpellCap        ctermfg=Red   ctermbg=White cterm=underline guifg=Red   guibg=White gui=underline
+highlight SpellLocal      ctermfg=Red   ctermbg=White cterm=underline guifg=Red   guibg=White gui=underline
+highlight SpellRare       ctermfg=Red   ctermbg=White cterm=underline guifg=Red   guibg=White gui=underline
+highlight illuminatedWord ctermfg=Black ctermbg=Blue                  guifg=Black guibg=Blue

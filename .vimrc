@@ -53,11 +53,6 @@ if (executable('rg'))
     let g:ctrlsf_ackprg = '/usr/bin/rg'
 endif
 
-let g:ctrlsf_mapping = {
-    \ "next": "n",
-    \ "prev": "N",
-    \ }
-
 " switch focus to ctrlsf window
 let g:ctrlsf_auto_focus = {
     \ "at": "start"

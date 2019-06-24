@@ -213,6 +213,11 @@ map <leader>~ :call switch#Switch()<CR>
 Plugin 'machakann/vim-swap'
 
 
+Plugin 'RRethy/vim-illuminate'
+
+let g:Illuminate_delay = 0
+
+
 " rainbow_parentheses.vim ------------------------------------------------------
 Plugin 'junegunn/rainbow_parentheses.vim'
 

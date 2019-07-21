@@ -1,12 +1,10 @@
 #!/bin/bash
 
-# Terminate already running bar instances
+# Terminate already running bars
 killall -q polybar
 
-# Wait until the processes have been shut down
+# Wait until bars have been terminated
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-# Launch bar on every monitor
-for m in $(polybar --list-monitors | cut -d":" -f1); do
-  MONITOR=$m polybar --reload -c ~/.config/polybar/config.ini main &
-done
+# Launch Polybar
+polybar --reload -c ~/.config/polybar/config.ini main &

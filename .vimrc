@@ -26,6 +26,9 @@ let g:ycm_use_ultisnips_completer = 1
 let g:ycm_enable_diagnostic_highlighting = 0
 let g:ycm_enable_diagnostic_signs = 1
 
+" do not show preview window
+set completeopt-=preview
+
 nnoremap <leader>yg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>yf :YcmCompleter FixIt<CR>
 

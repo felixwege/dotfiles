@@ -192,6 +192,9 @@ Plugin 'honza/vim-snippets'
 " vim-doge (insert documentation skeleton) -------------------------------------
 Plugin 'kkoomen/vim-doge'
 
+let g:doge_mapping_comment_jump_forward = '<C-l>'
+let g:doge_mapping_comment_jump_backward = '<C-h>'
+
 
 " vim-surround (change surroundings) -------------------------------------------
 "Plugin 'tpope/vim-surround'

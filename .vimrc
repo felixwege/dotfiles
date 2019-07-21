@@ -189,6 +189,9 @@ endif
 " vim-snippets (collecion of snippets) -----------------------------------------
 Plugin 'honza/vim-snippets'
 
+" vim-doge (insert documentation skeleton) -------------------------------------
+Plugin 'kkoomen/vim-doge'
+
 
 " vim-surround (change surroundings) -------------------------------------------
 "Plugin 'tpope/vim-surround'

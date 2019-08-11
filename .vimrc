@@ -307,9 +307,6 @@ let g:tex_flavor = "latex" " reqiured for YouCompleteMe and UltiSnips
 " make Y behave like C and D
 nnoremap Y y$
 
-" make S behave like I in visual block mode
-vnoremap S xgvI
-
 " jump to next/previous section
 nmap <C-n> ]]
 nmap <C-p> [[
@@ -342,10 +339,6 @@ map K :bnext<CR>
 
 " close buffer
 map Q :bdelete<CR>
-
-nnoremap <leader>w :w
-nnoremap <leader>q :q
-nnoremap <leader>e :e
 
 " copy selection
 vnoremap <C-c> "+y

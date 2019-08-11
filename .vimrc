@@ -200,7 +200,7 @@ let g:doge_mapping_comment_jump_backward = '<C-h>'
 
 
 " vim-surround (change surroundings) -------------------------------------------
-"Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 
 
 " switch.vim (toggle boolean) --------------------------------------------------

@@ -3,19 +3,12 @@ filetype off                  " required
 let mapleader=" " " space bar
 
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" Specify a directory for plugins ----------------------------------------------
+call plug#begin('~/.vim/autoload')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" Keep Plugin commands between vundle#begin/end.
 
 " YouCompleteMe (auto-completion) ----------------------------------------------
-Plugin 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe'
 
 let g:ycm_python_binary_path = '/usr/bin/python3'
 let g:ycm_extra_conf_globlist = ['/home/felix/.vim/.ycm_extra_conf.py', '/home/felix/Repositories/HULKs/nao/*']
@@ -34,7 +27,7 @@ nnoremap <leader>yf :YcmCompleter FixIt<CR>
 
 
 " fzf.vim (search for files) ---------------------------------------------------
-Plugin 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim'
 
 " these are independent of the fzf.vim plugin
 set rtp+=~/.fzf
@@ -44,7 +37,7 @@ nnoremap <leader>b :Buffers<CR>
 
 
 " ctrlsf.vim (Sublime-like search window using ripgrep) ------------------------
-Plugin 'dyng/ctrlsf.vim'
+Plug 'dyng/ctrlsf.vim'
 
 " search for pattern (do not trim the whitespace, press Enter to search for word under cursor)
 nnoremap <leader>a :only<CR> <bar> :CtrlSF 
@@ -69,21 +62,21 @@ let g:ctrlsf_auto_close = {
 
 
 " vim-clang-format -------------------------------------------------------------
-Plugin 'rhysd/vim-clang-format'
+Plug 'rhysd/vim-clang-format'
 
 
 " vim-yapf ---------------------------------------------------------------------
-Plugin 'mindriot101/vim-yapf'
+Plug 'mindriot101/vim-yapf'
 
 
 " base16-vim (color themes) ----------------------------------------------------
-Plugin 'chriskempson/base16-vim'
+Plug 'chriskempson/base16-vim'
 
 let base16colorspace=256  " Access colors present in 256 colorspace
 
 
 " vim-airline (status line) ----------------------------------------------------
-Plugin 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline'
 
 let g:airline_theme='base16'
 
@@ -99,11 +92,11 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 
 " vim-airline-themes (status line themes) --------------------------------------
-Plugin 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline-themes'
 
 
 " nerdtree (tree explorer) -----------------------------------------------------
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 
 let NERDTreeShowHidden=1
 
@@ -114,29 +107,29 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 
 " nerdcommenter (comment-in/comment-out things) --------------------------------
-Plugin 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter'
 
 " Align line-wise comment delimiters flush left instead of following code indentation
 let g:NERDDefaultAlign = 'left'
 
 
 " vim-gitgutter (show git diff in gutter) --------------------------------------
-Plugin 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 
 let g:gitgutter_sign_removed = "-"
 let g:gitgutter_map_keys = 0
 
 
 " vim-fugitive (git wrapper) ---------------------------------------------------
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 
 " vim-rhubarb (:Gbrowse etc.) --------------------------------------------------
-Plugin 'tpope/vim-rhubarb'
+Plug 'tpope/vim-rhubarb'
 
 
 " vim-better-whitespace --------------------------------------------------------
-Plugin 'ntpeters/vim-better-whitespace'
+Plug 'ntpeters/vim-better-whitespace'
 
 let g:show_spaces_that_precede_tabs=1
 
@@ -144,11 +137,11 @@ map <leader>fw :StripWhitespace<CR>
 
 
 " tabular (text alignment) -----------------------------------------------------
-Plugin 'godlygeek/tabular'
+Plug 'godlygeek/tabular'
 
 
 " vim-markdown (requires tabular) ----------------------------------------------
-Plugin 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown'
 
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_folding_disabled = 1
@@ -165,20 +158,20 @@ map <leader>ft :TableFormat<CR>
 
 
 " vim-toml ---------------------------------------------------------------------
-Plugin 'cespare/vim-toml'
+Plug 'cespare/vim-toml'
 
 
 " vim-json ---------------------------------------------------------------------
-Plugin 'elzr/vim-json'
+Plug 'elzr/vim-json'
 let g:vim_json_syntax_conceal = 0
 
 
 " vimtex -----------------------------------------------------------------------
-Plugin 'lervag/vimtex'
+Plug 'lervag/vimtex'
 
 
 " ultisnips (snippet engine) ---------------------------------------------------
-Plugin 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips'
 
 let g:UltiSnipsExpandTrigger = '<C-j>'
 let g:UltiSnipsJumpForwardTrigger="<C-l>"
@@ -190,10 +183,10 @@ endif
 
 
 " vim-snippets (collecion of snippets) -----------------------------------------
-Plugin 'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 
 " vim-doge (insert documentation skeleton) -------------------------------------
-Plugin 'kkoomen/vim-doge'
+Plug 'kkoomen/vim-doge'
 
 let g:doge_mapping_comment_jump_forward = '<C-l>'
 let g:doge_mapping_comment_jump_backward = '<C-h>'
@@ -201,11 +194,11 @@ let g:doge_doc_standard_python = 'google'
 
 
 " vim-surround (change surroundings) -------------------------------------------
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
 
 " switch.vim (toggle boolean) --------------------------------------------------
-Plugin 'AndrewRadev/switch.vim'
+Plug 'AndrewRadev/switch.vim'
 
 " disable default mapping
 let g:switch_mapping = ""
@@ -215,16 +208,16 @@ map <leader>~ :call switch#Switch()<CR>
 
 " machakann/vim-swap (swap delimited items) ------------------------------------
 
-Plugin 'machakann/vim-swap'
+Plug 'machakann/vim-swap'
 
 
-Plugin 'RRethy/vim-illuminate'
+Plug 'RRethy/vim-illuminate'
 
 let g:Illuminate_delay = 0
 
 
 " rainbow_parentheses.vim ------------------------------------------------------
-Plugin 'junegunn/rainbow_parentheses.vim'
+Plug 'junegunn/rainbow_parentheses.vim'
 
 " activate when starting vim
 autocmd VimEnter * RainbowParentheses
@@ -233,48 +226,36 @@ let g:rainbow#blacklist = [15, 7, 1, 242, 12, 8, 6, 2, 3]
 
 
 " vim-cpp-enhanced-highlight ---------------------------------------------------
-Plugin 'octol/vim-cpp-enhanced-highlight'
+Plug 'octol/vim-cpp-enhanced-highlight'
 
 
 " felixwege/semshi (python semantic highlighting) ------------------------------
 if has('nvim')
-    Plugin 'felixwege/semshi'
+    Plug 'felixwege/semshi'
 endif
 
 
 " mboughaba/i3config.vim (i3 config syntax highlighting) -----------------------
-Plugin 'mboughaba/i3config.vim'
+Plug 'mboughaba/i3config.vim'
 
 
 " goyo (distraction free) ------------------------------------------------------
-Plugin 'junegunn/goyo.vim'
+Plug 'junegunn/goyo.vim'
 
 let g:goyo_width = 100
 let g:goyo_height = 50
 
 
 " limelight (Hyperfocus-writing) -----------------------------------------------
-Plugin 'junegunn/limelight.vim'
+Plug 'junegunn/limelight.vim'
 
 
 " BufOnly (delete all buffers extept the curent one with :BufOnly) -------------
-Plugin 'vim-scripts/BufOnly.vim'
+Plug 'vim-scripts/BufOnly.vim'
 
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+" Initialize plugin system -----------------------------------------------------
+call plug#end()
 
 
 " general settings -------------------------------------------------------------

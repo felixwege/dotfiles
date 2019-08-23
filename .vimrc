@@ -214,10 +214,10 @@ map <leader>~ :call switch#Switch()<CR>
 
 
 " machakann/vim-swap (swap delimited items) ------------------------------------
-
 Plug 'machakann/vim-swap'
 
 
+" RRethy/vim-illuminate (highlight word under cursor) --------------------------
 Plug 'RRethy/vim-illuminate'
 
 let g:Illuminate_delay = 0

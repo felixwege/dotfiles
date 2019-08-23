@@ -8,7 +8,7 @@ call plug#begin('~/.vim/autoload')
 
 
 " YouCompleteMe (auto-completion) ----------------------------------------------
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 
 let g:ycm_python_binary_path = '/usr/bin/python3'
 let g:ycm_extra_conf_globlist = ['/home/felix/.vim/.ycm_extra_conf.py', '/home/felix/Repositories/HULKs/nao/*']
@@ -26,7 +26,12 @@ nnoremap <leader>yg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>yf :YcmCompleter FixIt<CR>
 
 
-" fzf.vim (search for files) ---------------------------------------------------
+" fzf and fzf.vim (search for files) -------------------------------------------
+"
+" Install fzf
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Actual plugin
 Plug 'junegunn/fzf.vim'
 
 " these are independent of the fzf.vim plugin
@@ -66,7 +71,7 @@ Plug 'rhysd/vim-clang-format'
 
 
 " vim-yapf ---------------------------------------------------------------------
-Plug 'mindriot101/vim-yapf'
+Plug 'mindriot101/vim-yapf', { 'for': 'python' }
 
 
 " base16-vim (color themes) ----------------------------------------------------
@@ -96,7 +101,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 
 " nerdtree (tree explorer) -----------------------------------------------------
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree' , { 'on': 'NERDTreeToggle' }
 
 let NERDTreeShowHidden=1
 
@@ -167,7 +172,7 @@ let g:vim_json_syntax_conceal = 0
 
 
 " vimtex -----------------------------------------------------------------------
-Plug 'lervag/vimtex'
+Plug 'lervag/vimtex', { 'for': 'tex' }
 
 
 " ultisnips (snippet engine) ---------------------------------------------------
@@ -231,16 +236,16 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 
 " felixwege/semshi (python semantic highlighting) ------------------------------
 if has('nvim')
-    Plug 'felixwege/semshi'
+    Plug 'felixwege/semshi', { 'for': 'python', 'do': ':UpdateRemotePlugins' }
 endif
 
 
 " mboughaba/i3config.vim (i3 config syntax highlighting) -----------------------
-Plug 'mboughaba/i3config.vim'
+Plug 'mboughaba/i3config.vim', { 'for': 'i3config' }
 
 
 " goyo (distraction free) ------------------------------------------------------
-Plug 'junegunn/goyo.vim'
+Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 
 let g:goyo_width = 100
 let g:goyo_height = 50

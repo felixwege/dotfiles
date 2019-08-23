@@ -197,6 +197,7 @@ Plugin 'kkoomen/vim-doge'
 
 let g:doge_mapping_comment_jump_forward = '<C-l>'
 let g:doge_mapping_comment_jump_backward = '<C-h>'
+let g:doge_doc_standard_python = 'google'
 
 
 " vim-surround (change surroundings) -------------------------------------------

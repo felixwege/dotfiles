@@ -115,7 +115,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 Plug 'scrooloose/nerdcommenter'
 
 " Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDSpaceDelims = 0
 let g:NERDDefaultAlign = 'left'
+let g:NERDTrimTrailingWhitespace = 0
 
 
 " vim-gitgutter (show git diff in gutter) --------------------------------------

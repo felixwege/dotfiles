@@ -38,7 +38,6 @@ Plug 'junegunn/fzf.vim'
 set rtp+=~/.fzf
 
 nnoremap <leader>s :Files<CR>
-nnoremap <leader>b :Buffers<CR>
 
 
 " ctrlsf.vim (Sublime-like search window using ripgrep) ------------------------
@@ -64,6 +63,10 @@ let g:ctrlsf_auto_close = {
     \ "normal" : 0,
     \ "compact": 0
     \}
+
+
+" jeetsukumaran/vim-buffergator (list and switch buffers) ----------------------
+Plug 'jeetsukumaran/vim-buffergator'
 
 
 " vim-clang-format -------------------------------------------------------------

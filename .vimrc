@@ -364,6 +364,22 @@ function ScrollQuarterScreen(direction)
 endfunction
 
 
+" set/remove/toggle ipdb breakpoints -------------------------------------------
+function! IPDBSetBreakpoint()
+    call append(line('.')-1, repeat(' ', strlen(matchstr(getline('.'), '^\s*'))) . 'import ipdb; ipdb.set_trace()')
+    execute 'normal k'
+endfunction
+
+function! IPDBRemoveBreakpoint()
+    execute 'silent! g/^\s*import\sipdb\;\?\n*\s*ipdb.set_trace()/d'
+endfunction
+
+function! IPDBToggleBreakpoint()
+    if getline('.')=~#'^\s*import\sipdb' | call IPDBRemoveBreakpoint() | else | call IPDBSetBreakpoint() | endif
+    write
+endfunction
+
+
 " run command on current file --------------------------------------------------
 function RunWith(command)
     execute "w"
@@ -528,6 +544,14 @@ autocmd FileType gz noremap <leader>e :call CompileGraph()<CR>
 augroup i3config_ft_detection
     autocmd!
     autocmd BufNewFile,BufRead */i3/config set filetype=i3config
+augroup end
+
+
+augroup IPDBBreakpoints
+    autocmd!
+    autocmd FileType python nnoremap <leader>ps :call IPDBSetBreakpoint()<CR>
+    autocmd FileType python nnoremap <leader>pr :call IPDBRemoveBreakpoint()<CR>
+    autocmd FileType python nnoremap <leader>pt :call IPDBToggleBreakpoint()<CR>
 augroup end
 
 

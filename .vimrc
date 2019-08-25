@@ -104,7 +104,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 
 " nerdtree (tree explorer) -----------------------------------------------------
-Plug 'scrooloose/nerdtree' , { 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree'
 
 let NERDTreeShowHidden=1
 

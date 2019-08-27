@@ -324,8 +324,8 @@ nnoremap <BS> hx
 " jump to last non-whitespace character of current line (analogous to ^, which  jumps to the first non-whitespace character)
 nnoremap _ g_
 
-nnoremap <leader>v :NERDTreeClose<CR> :vsplit<CR>
-nnoremap <leader>h :NERDTreeClose<CR> :split<CR>
+nnoremap <leader>v :NERDTreeClose<CR> :vsplit<CR><C-w><C-l>
+nnoremap <leader>h :NERDTreeClose<CR> :split<CR><C-w><C-j>
 nnoremap <leader>m :! make<CR><CR>
 
 " substitute word under cursor

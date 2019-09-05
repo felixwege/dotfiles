@@ -303,6 +303,9 @@ let g:tex_flavor = "latex" " reqiured for YouCompleteMe and UltiSnips
 " make Y behave like C and D
 nnoremap Y y$
 
+" make A behave similar to I in visual mode (append to lines)
+vnoremap A :'<,'>normal A
+
 " jump to next/previous section
 nmap <C-n> ]]
 nmap <C-p> [[

@@ -50,9 +50,9 @@ nnoremap <leader>s :Files<CR>
 Plug 'dyng/ctrlsf.vim'
 
 " search for pattern (do not trim the whitespace, press Enter to search for word under cursor)
-nnoremap <leader>a :only<CR> <bar> :CtrlSF 
+nnoremap <leader>r :only<CR> :CtrlSF 
 " search for visual selection
-vmap <leader>a <Plug>CtrlSFVwordExec
+vmap <leader>r <Plug>CtrlSFVwordExec
 
 " always use ripgrep if it exists
 if (executable('rg'))
@@ -329,7 +329,7 @@ nnoremap <leader>h :NERDTreeClose<CR> :split<CR><C-w><C-j>
 nnoremap <leader>m :! make<CR><CR>
 
 " substitute word under cursor
-nnoremap <leader>r :%s/\<<C-r><C-w>\>//g<Left><Left><Paste>
+nnoremap <leader>u :%s/\<<C-r><C-w>\>//g<Left><Left><Paste>
 
 " change buffers
 map J :bprevious<CR>

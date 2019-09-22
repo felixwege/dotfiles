@@ -236,7 +236,7 @@ Plug 'junegunn/rainbow_parentheses.vim'
 " activate when starting vim
 autocmd VimEnter * RainbowParentheses
 map <leader>tr :RainbowParentheses!!<CR>
-let g:rainbow#blacklist = [15, 7, 1, 242, 12, 8, 6, 2, 3]
+let g:rainbow#blacklist = [15, 7, 8, 6]
 
 
 " vim-cpp-enhanced-highlight ---------------------------------------------------

@@ -278,6 +278,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 for_window [class="Spotify"] move to workspace $ws8
 assign [class="Telegram"] $ws9
 assign [class="Riot"] $ws9
+assign [class="Slack"] $ws9
 
 # Open specific applications in floating mode
 #for_window [title="alsamixer"] floating enable border pixel 1
@@ -296,13 +297,14 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-set $EXEC_MODE "[f]irefox | [s]potify | [t]elegram | [r]iot | [h]top | [n]mtui | ran[g]er"
+set $EXEC_MODE "[f]irefox | [s]potify | [t]elegram | [r]iot | s[l]ack | [h]top | [n]mtui | ran[g]er"
 bindsym $mod+e mode $EXEC_MODE
 mode $EXEC_MODE {
     bindsym f exec firefox, mode "default"
     bindsym s exec spotify, mode "default"
     bindsym t exec telegram-desktop, mode "default"
     bindsym r exec riot-desktop, mode "default"
+    bindsym l exec slack, mode "default"
     bindsym h exec termite -e htop, mode "default"
     bindsym n exec termite -e nmtui, mode "default"
     bindsym g exec termite -e ranger, mode "default"

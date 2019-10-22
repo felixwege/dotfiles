@@ -268,6 +268,12 @@ Plug 'junegunn/limelight.vim'
 Plug 'vim-scripts/BufOnly.vim'
 
 
+" suda.vim (sudo.vim, except it works for neovim) ------------------------------
+Plug 'lambdalisue/suda.vim'
+
+command SudoWrite w suda://%
+
+
 " Initialize plugin system -----------------------------------------------------
 call plug#end()
 

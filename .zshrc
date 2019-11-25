@@ -99,8 +99,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
-# ctrl+j to accept autosuggestions
-bindkey '^j' autosuggest-accept
+# ctrl+Space to accept autosuggestions
+bindkey '^ ' autosuggest-accept
 
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none

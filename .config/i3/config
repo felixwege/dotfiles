@@ -55,7 +55,8 @@ set_from_resource $term_color21    color21
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec termite -e tmux
+bindsym $mod+Shift+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill

@@ -75,6 +75,10 @@ let g:ctrlsf_auto_close = {
 Plug 'jeetsukumaran/vim-buffergator'
 
 
+" christoomey/vim-tmux-navigator -----------------------------------------------
+Plug 'christoomey/vim-tmux-navigator'
+
+
 " vim-clang-format -------------------------------------------------------------
 Plug 'rhysd/vim-clang-format'
 

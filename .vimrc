@@ -249,7 +249,12 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 
 " felixwege/semshi (python semantic highlighting) ------------------------------
 if has('nvim')
-    Plug 'felixwege/semshi', { 'for': 'python', 'do': ':UpdateRemotePlugins' }
+    function! DoSemshi(info)
+        " unused parameter info
+        !pip3 install --upgrade --user pynvim
+        UpdateRemotePlugins
+    endfunction
+    Plug 'felixwege/semshi', { 'for': 'python', 'do': function('DoSemshi') }
 endif
 
 

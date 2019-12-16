@@ -311,7 +311,8 @@ set spelllang=en_us
 set noautoread
 set hidden " hide buffers instead of closing them
 set backspace=indent,eol,start
-set directory^=$HOME/.vim/tmp// " tmp dir for swp files
+call mkdir($HOME . "/.vim/swap", "p", 0700)
+set directory^=$HOME/.vim/swap// " dir for swap files
 let g:tex_flavor = "latex" " reqiured for YouCompleteMe and UltiSnips
 
 " some custom maps --------------------------------------------------------------------

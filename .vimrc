@@ -82,9 +82,14 @@ Plug 'christoomey/vim-tmux-navigator'
 " vim-clang-format -------------------------------------------------------------
 Plug 'rhysd/vim-clang-format'
 
+autocmd FileType cpp,hpp,c,h map <leader>f :ClangFormat<CR>
+
+
 
 " vim-yapf ---------------------------------------------------------------------
 Plug 'mindriot101/vim-yapf', { 'for': 'python' }
+
+autocmd FileType python nnoremap <leader>f :call Yapf()<cr>
 
 
 " base16-vim (color themes) ----------------------------------------------------
@@ -153,8 +158,6 @@ Plug 'ntpeters/vim-better-whitespace'
 
 let g:show_spaces_that_precede_tabs=1
 
-map <leader>fw :StripWhitespace<CR>
-
 
 " tabular (text alignment) -----------------------------------------------------
 Plug 'godlygeek/tabular'
@@ -173,8 +176,6 @@ let g:vim_markdown_math = 1
 let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_toml_frontmatter = 1
 let g:vim_markdown_json_frontmatter = 1
-
-map <leader>ft :TableFormat<CR>
 
 
 " vim-toml ---------------------------------------------------------------------
@@ -204,6 +205,7 @@ endif
 
 " vim-snippets (collecion of snippets) -----------------------------------------
 Plug 'honza/vim-snippets'
+
 
 " vim-doge (insert documentation skeleton) -------------------------------------
 Plug 'kkoomen/vim-doge'
@@ -368,9 +370,6 @@ nnoremap <leader>gb :Gblame<CR>
 
 vnoremap <leader>s :sort<CR>
 
-" align current paragraph
-noremap <leader>fa =ip
-
 " scroll quarter of the screen up or down (yes, I know that the order is
 " reversed compared to the default vim bindings)
 nnoremap <C-y> :call ScrollQuarterScreen('down')<CR>
@@ -439,14 +438,6 @@ function CompileGraph()
 endfunc
 
 
-" clang format -----------------------------------------------------------------
-map <leader>fc :ClangFormat<CR>
-
-
-" yapf ------------------------------------------------------------------------
-nnoremap <leader>fp :call Yapf()<cr>
-
-
 " toggle wrapping --------------------------------------------------------------
 map <leader>tw :call ToggleWrapping()<CR>
 
@@ -471,6 +462,7 @@ function! ToggleFolding()
     endif
 endfunction
 
+
 " toggle line numbers ----------------------------------------------------------
 nmap <leader>tl :call ToggleLineNumber()<CR>
 
@@ -485,6 +477,7 @@ endfunc
 
 " jump between cpp and hpp -----------------------------------------------------
 nmap <leader>th :call ToggleSourceHeader()<CR>
+
 
 " toggle source header function
 function ToggleSourceHeader()

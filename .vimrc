@@ -217,6 +217,10 @@ let g:doge_doc_standard_python = 'google'
 Plug 'tpope/vim-surround'
 
 
+" vim-repeat (repeat plugin maps with '.')
+Plug 'tpope/vim-repeat'
+
+
 " switch.vim (toggle boolean) --------------------------------------------------
 Plug 'AndrewRadev/switch.vim'
 

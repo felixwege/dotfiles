@@ -91,7 +91,7 @@ exec ~/.venv/nao/bin/python3 ~/Repositories/HULKs/nao/scripts/alivenessReceiver.
 exec_always ~/.fehbg
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 3
+default_border pixel 4
 default_floating_border normal
 
 # Don't hide borders
@@ -298,27 +298,12 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-set $EXEC_MODE "[f]irefox | [s]potify | [t]elegram | [r]iot | s[l]ack | [h]top | [n]mtui | ran[g]er"
-bindsym $mod+e mode $EXEC_MODE
-mode $EXEC_MODE {
-    bindsym f exec firefox, mode "default"
-    bindsym s exec spotify, mode "default"
-    bindsym t exec telegram-desktop, mode "default"
-    bindsym r exec riot-desktop, mode "default"
-    bindsym l exec slack, mode "default"
-    bindsym h exec termite -e htop, mode "default"
-    bindsym n exec termite -e nmtui, mode "default"
-    bindsym g exec termite -e ranger, mode "default"
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-
 bindsym $mod+b border toggle 3
 
 # Theme colors
 # class                    border           background       text             indic.           child_border
 client.focused             $term_foreground $term_foreground $term_background $term_foreground $term_foreground
-client.focused_inactive    $term_background $term_background $term_foreground $term_background $term_background
+client.focused_inactive    $term_color20    $term_color20    $term_foreground $term_color20    $term_color20
 client.unfocused           $term_background $term_background $term_foreground $term_background $term_background
 client.urgent              $term_color1     $term_color1     $term_background $term_color1     $term_color1
 client.placeholder         $term_background $term_background $term_background $term_background $term_background

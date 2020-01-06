@@ -50,7 +50,7 @@ nnoremap <leader>s :Files<CR>
 Plug 'dyng/ctrlsf.vim'
 
 " search for pattern (do not trim the whitespace, press Enter to search for word under cursor)
-nnoremap <leader>r :only<CR> :CtrlSF 
+nnoremap <leader>r :CtrlSF 
 " search for visual selection
 vmap <leader>r <Plug>CtrlSFVwordExec
 
@@ -522,25 +522,27 @@ endfunc
 
 
 " toggle lazygit ---------------------------------------------------------------
-nnoremap <leader>lg :call LazyGit()<CR>
+if has('nvim')
+    nnoremap <leader>lg :call LazyGit()<CR>
 
-function! LazyGit()
-    if empty(bufname('lazygit'))
-        let width = float2nr(&columns)
-        let height = float2nr(&lines)
-        let top = ((&lines - height) / 2) - 1
-        let left = (&columns - width) / 2
-        let opts = {'relative': 'editor', 'row': top, 'col': left, 'width': width, 'height': height, 'style': 'minimal'}
-        set winhighlight=Normal:Floating
-        call nvim_open_win(nvim_create_buf(v:false, v:true), v:true, opts)
+    function! LazyGit()
+        if empty(bufname('lazygit'))
+            let width = float2nr(&columns)
+            let height = float2nr(&lines)
+            let top = ((&lines - height) / 2) - 1
+            let left = (&columns - width) / 2
+            let opts = {'relative': 'editor', 'row': top, 'col': left, 'width': width, 'height': height, 'style': 'minimal'}
+            set winhighlight=Normal:Floating
+            call nvim_open_win(nvim_create_buf(v:false, v:true), v:true, opts)
 
-        function! OnLazyGitExit(...)
-            bdelete!
-        endfunction
-        call termopen('lazygit', {'on_exit': function('OnLazyGitExit')})
-        startinsert
-    endif
-endfunction
+            function! OnLazyGitExit(...)
+                bdelete!
+            endfunction
+            call termopen('lazygit', {'on_exit': function('OnLazyGitExit')})
+            startinsert
+        endif
+    endfunction
+endif
 
 
 " goyo enter and leave ---------------------------------------------------------

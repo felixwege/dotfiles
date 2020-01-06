@@ -521,6 +521,28 @@ function ToggleSpellChecking()
 endfunc
 
 
+" toggle lazygit ---------------------------------------------------------------
+nnoremap <leader>lg :call LazyGit()<CR>
+
+function! LazyGit()
+    if empty(bufname('lazygit'))
+        let width = float2nr(&columns)
+        let height = float2nr(&lines)
+        let top = ((&lines - height) / 2) - 1
+        let left = (&columns - width) / 2
+        let opts = {'relative': 'editor', 'row': top, 'col': left, 'width': width, 'height': height, 'style': 'minimal'}
+        set winhighlight=Normal:Floating
+        call nvim_open_win(nvim_create_buf(v:false, v:true), v:true, opts)
+
+        function! OnLazyGitExit(...)
+            bdelete!
+        endfunction
+        call termopen('lazygit', {'on_exit': function('OnLazyGitExit')})
+        startinsert
+    endif
+endfunction
+
+
 " goyo enter and leave ---------------------------------------------------------
 function! s:goyo_enter()
     Limelight

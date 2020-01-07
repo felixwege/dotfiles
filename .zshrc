@@ -209,6 +209,9 @@ alias am='alsamixer'
 # preserve user environment
 alias svim="sudo -E vim"
 
+# lazygit
+alias lg="lazygit"
+
 # task warrior
 if [ $TASKWARRIOR = true ]; then
     source ~/.aliases/taskwarrior.sh

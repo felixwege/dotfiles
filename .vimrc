@@ -526,7 +526,7 @@ if has('nvim')
     nnoremap <leader>gl :call LazyGit()<CR>
 
     function! LazyGit()
-        if empty(bufname('lazygit'))
+        if bufexists('lazygit') == 0
             let width = float2nr(&columns)
             let height = float2nr(&lines)
             let top = ((&lines - height) / 2) - 1

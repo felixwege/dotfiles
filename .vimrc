@@ -523,7 +523,7 @@ endfunc
 
 " toggle lazygit ---------------------------------------------------------------
 if has('nvim')
-    nnoremap <leader>lg :call LazyGit()<CR>
+    nnoremap <leader>gl :call LazyGit()<CR>
 
     function! LazyGit()
         if empty(bufname('lazygit'))

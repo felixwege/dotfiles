@@ -152,6 +152,9 @@ Plug 'tpope/vim-fugitive'
 " vim-rhubarb (:Gbrowse etc.) --------------------------------------------------
 Plug 'tpope/vim-rhubarb'
 
+nnoremap <leader>gx :Gbrowse<CR>
+vnoremap <leader>gx :Gbrowse<CR>
+
 
 " vim-better-whitespace --------------------------------------------------------
 Plug 'ntpeters/vim-better-whitespace'

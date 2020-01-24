@@ -361,8 +361,8 @@ nnoremap <leader>u :%s/\<<C-r><C-w>\>//g<Left><Left><Paste>
 map J :bprevious<CR>
 map K :bnext<CR>
 
-" close buffer
-map Q :bdelete<CR>
+" close buffer (from https://stackoverflow.com/questions/4298910/vim-close-buffer-but-not-split-window/19619038#19619038)
+nmap Q :b#<bar>bd#<CR>
 
 " copy selection
 vnoremap <C-c> "+y

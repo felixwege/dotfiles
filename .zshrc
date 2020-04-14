@@ -9,6 +9,10 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin/:$PATH
 # Append cuda to $LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cuda/lib64
 
+export ANDROID_HOME=/home/felix/Android/sdk
+export ANDROID_SDK_ROOT=/home/felix/Android/sdk
+export ANDROID_AVD_HOME=/home/felix/.android/avd
+
 # append eyesim lib to LD_LIBRARY_PATH
 if [ $EYESIM = true ]; then
     export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/

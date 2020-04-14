@@ -160,6 +160,15 @@ function fehrandr {
 }
 
 
+# Weather
+function wttr {
+    if [ -n "$1" ]; then
+        curl wttr.in/$1
+    else
+        curl wttr.in
+    fi
+}
+
 function md2pdf {
     if [[ $1 == *.md ]]; then
         # strip file extension with shell parameter expansion

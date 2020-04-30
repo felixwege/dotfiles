@@ -233,6 +233,13 @@ let g:switch_mapping = ""
 map <leader>~ :call switch#Switch()<CR>
 
 
+Plug 'fmoralesc/vim-pad'
+
+let g:pad#dir = '~/Documents/notes'
+let g:pad#window_height = 32
+let g:pad#open_in_split = 0
+
+
 " machakann/vim-swap (swap delimited items) ------------------------------------
 Plug 'machakann/vim-swap'
 

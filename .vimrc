@@ -238,6 +238,11 @@ Plug 'fmoralesc/vim-pad'
 let g:pad#dir = '~/Documents/notes'
 let g:pad#window_height = 32
 let g:pad#open_in_split = 0
+let g:pad#maps#list = '<leader>nl'
+let g:pad#maps#new = '<leader>nn'
+let g:pad#maps#search = '<leader>ns'
+let g:pad#maps#incsearch = ''
+let g:pad#maps#newsilent = ''
 
 
 " machakann/vim-swap (swap delimited items) ------------------------------------

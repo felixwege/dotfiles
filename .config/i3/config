@@ -277,6 +277,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # assign [class="Thunderbird"] $ws1
 # workaround because spotify is not setting hints when mapping the window
 for_window [class="Spotify"] move to workspace $ws8
+# manually add Telegrem border as it's missing
+for_window [class="Telegram"] border pixel 4
 assign [class="Telegram"] $ws9
 assign [class="Element"] $ws9
 assign [class="Slack"] $ws9

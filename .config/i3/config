@@ -314,7 +314,7 @@ client.background          $term_background
 #############################
 
 # Set inner/outer gaps
-gaps inner 0
+gaps inner 14
 gaps outer 0
 
 # Smart gaps (gaps used if only more than one container on the workspace)

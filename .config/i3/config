@@ -91,7 +91,7 @@ exec ~/.venv/nao/bin/python3 ~/Repositories/HULKs/nao/scripts/alivenessReceiver.
 exec_always ~/.fehbg
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 2
+default_border pixel 4
 default_floating_border normal
 
 # Don't hide borders

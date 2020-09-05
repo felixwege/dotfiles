@@ -13,23 +13,8 @@ endif
 call plug#begin('~/.vim/autoload')
 
 
-" YouCompleteMe (auto-completion) ----------------------------------------------
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
-
-let g:ycm_python_binary_path = '/usr/bin/python3'
-let g:ycm_extra_conf_globlist = ['/home/felix/.vim/.ycm_extra_conf.py', '/home/felix/Repositories/HULKs/nao/*']
-let g:ycm_confirm_extra_conf = 1
-let g:ycm_complete_in_comments = 1
-let g:ycm_complete_in_strings = 1
-let g:ycm_use_ultisnips_completer = 1
-let g:ycm_enable_diagnostic_highlighting = 0
-let g:ycm_enable_diagnostic_signs = 1
-
-" do not show preview window
-set completeopt-=preview
-
-nnoremap <leader>yg :YcmCompleter GoToDefinitionElseDeclaration<CR>
-nnoremap <leader>yf :YcmCompleter FixIt<CR>
+" coc.vim ----------------------------------------------------------------------
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 
 " fzf and fzf.vim (search for files) -------------------------------------------

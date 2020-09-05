@@ -16,6 +16,13 @@ call plug#begin('~/.vim/autoload')
 " coc.vim ----------------------------------------------------------------------
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" navigate completion list
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+
+" confirm conpletion
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
 
 " fzf and fzf.vim (search for files) -------------------------------------------
 "
@@ -182,7 +189,7 @@ Plug 'lervag/vimtex', { 'for': 'tex' }
 " ultisnips (snippet engine) ---------------------------------------------------
 Plug 'SirVer/ultisnips'
 
-let g:UltiSnipsExpandTrigger = '<C-j>'
+"let g:UltiSnipsExpandTrigger = '<C-j>'
 let g:UltiSnipsJumpForwardTrigger="<C-l>"
 let g:UltiSnipsJumpBackwardTrigger="<C-h>"
 let g:UltiSnipsSnippetDirectories = ['/home/felix/.vim/bundle/vim-snippets/UltiSnips']

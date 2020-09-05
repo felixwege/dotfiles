@@ -264,6 +264,13 @@ if has('nvim')
 endif
 
 
+" fatih/vim-go ---------------------------------------------------------------------
+
+Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
+
+autocmd FileType go map <leader>f :GoFmt<CR>
+
+
 " mboughaba/i3config.vim (i3 config syntax highlighting) -----------------------
 Plug 'mboughaba/i3config.vim', { 'for': 'i3config' }
 

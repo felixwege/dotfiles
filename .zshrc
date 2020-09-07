@@ -63,7 +63,7 @@ if ! zplug check --verbose; then
 fi
 
 # Then, source plugins and add commands to $PATH
-zplug load --verbose
+zplug load
 
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"

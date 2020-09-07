@@ -27,13 +27,6 @@ source ~/.zplug/init.zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 
-# Completion as one types
-zplug "marlonrichert/zsh-autocomplete"
-
-# No completion unless at least 3 input characters
-zstyle ':autocomplete:list-choices:*' min-input 3
-
-
 # additional completions
 zplug "zsh-users/zsh-completions"
 

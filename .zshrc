@@ -153,6 +153,8 @@ function gcsp {
     git checkout -
 }
 
+alias l="ls -lah"
+
 # additional git aliases
 alias grl="git reflog"
 alias gdn="git diff --name-only"

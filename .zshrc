@@ -57,6 +57,10 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "mfaerevaag/wd", as:command, use:"wd.sh", hook-load:"wd() { . $ZPLUG_REPOS/mfaerevaag/wd/wd.sh }"
 
 
+# Colorize output of various programs
+zplug "zpm-zsh/colorize"
+
+
 # Theme
 zplug "themes/ys", from:oh-my-zsh
 

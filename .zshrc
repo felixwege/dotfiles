@@ -6,6 +6,11 @@ EYESIM=true
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
+# History
+export HISTFILE=$HOME/.zsh_history
+export HISTSIZE=999999
+export HISTFILESIZE=999999
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin/:$PATH
 

@@ -32,6 +32,10 @@ zplug "zsh-users/zsh-completions"
 zplug "plugins/git",   from:oh-my-zsh
 
 
+# Notify about existing alias
+zplug "MichaelAquilina/zsh-you-should-use"
+
+
 # zsh-autosuggestions
 zplug "zsh-users/zsh-autosuggestions"
 

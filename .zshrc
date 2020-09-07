@@ -154,7 +154,7 @@ function gcsp {
     git checkout -
 }
 
-alias l="ls -lah"
+alias l="ls -lah --color"
 
 # additional git aliases
 alias grl="git reflog"

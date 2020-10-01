@@ -135,6 +135,14 @@ function md2pdf {
     fi
 }
 
+# transpile typescript file and run node
+function tscnode {
+    if tsc "$@"; then
+        FILENAME="${1%.*}"
+        node "${FILENAME}".js
+    fi
+}
+
 # combine mkdir and cd
 function mkcd {
     mkdir $1 && cd $1

@@ -16,6 +16,12 @@ call plug#begin('~/.vim/autoload')
 " coc.vim ----------------------------------------------------------------------
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+let g:coc_global_extensions = ['coc-sh', 'coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-yaml', 'coc-prettier', 'coc-python']
+
+" set up Prettier
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+autocmd FileType typescript map <leader>f :Prettier<CR>
+
 " navigate completion list
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"

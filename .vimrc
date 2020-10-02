@@ -277,7 +277,12 @@ if has('nvim')
 endif
 
 
-" fatih/vim-go ---------------------------------------------------------------------
+" leafgarland/typescript-vim ---------------------------------------------------
+
+Plug 'leafgarland/typescript-vim'
+
+
+" fatih/vim-go -----------------------------------------------------------------
 
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
 

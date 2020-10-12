@@ -1,0 +1,5 @@
+set scrolloff=1337 " focus centre of screen (vertically) while scrolling
+set ignorecase " case insensitive search
+set hlsearch " highlight search results
+set incsearch " highlight things while searching
+set smartcase " respect explicitly typed uppercase letters

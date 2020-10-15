@@ -18,9 +18,25 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 let g:coc_global_extensions = ['coc-sh', 'coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-yaml', 'coc-prettier', 'coc-python']
 
+" Apply codeAction to the current line
+nmap <leader>a  <Plug>(coc-codeaction)
+
+" Apply AutoFix to problem on the current line
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+" Symbol renaming
+nmap <leader>r <Plug>(coc-rename)
+
+
+" Code navigation
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gp <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
 " set up Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
-autocmd FileType typescript map <leader>f :Prettier<CR>
+autocmd FileType javascript,typescript map <leader>f :Prettier<CR>
 
 " navigate completion list
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
@@ -41,16 +57,16 @@ Plug 'junegunn/fzf.vim'
 " these are independent of the fzf.vim plugin
 set rtp+=~/.fzf
 
-nnoremap <leader>s :Files<CR>
+nnoremap <leader>f :Files<CR>
 
 
 " ctrlsf.vim (Sublime-like search window using ripgrep) ------------------------
 Plug 'dyng/ctrlsf.vim'
 
 " search for pattern (do not trim the whitespace, press Enter to search for word under cursor)
-nnoremap <leader>r :CtrlSF 
+nnoremap <leader>s :CtrlSF 
 " search for visual selection
-vmap <leader>r <Plug>CtrlSFVwordExec
+vmap <leader>s <Plug>CtrlSFVwordExec
 
 " always use ripgrep if it exists
 if (executable('rg'))
@@ -275,6 +291,11 @@ if has('nvim')
     endfunction
     Plug 'felixwege/semshi', { 'for': 'python', 'do': function('DoSemshi') }
 endif
+
+
+" pangloss/vim-javascript ------------------------------------------------------
+
+Plug 'pangloss/vim-javascript'
 
 
 " leafgarland/typescript-vim ---------------------------------------------------
@@ -599,9 +620,6 @@ autocmd FileType hpp setlocal shiftwidth=2
 autocmd FileType sh setlocal tabstop=2
 autocmd FileType sh setlocal softtabstop=2
 autocmd FileType sh setlocal shiftwidth=2
-autocmd FileType typescript setlocal tabstop=2
-autocmd FileType typescript setlocal softtabstop=2
-autocmd FileType typescript setlocal shiftwidth=2
 autocmd FileType xml setlocal tabstop=4
 autocmd FileType xml setlocal softtabstop=0
 autocmd FileType xml setlocal shiftwidth=4

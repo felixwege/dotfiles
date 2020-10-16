@@ -57,7 +57,7 @@ Plug 'junegunn/fzf.vim'
 " these are independent of the fzf.vim plugin
 set rtp+=~/.fzf
 
-nnoremap <leader>f :Files<CR>
+nnoremap <leader>e :Files<CR>
 
 
 " ctrlsf.vim (Sublime-like search window using ripgrep) ------------------------

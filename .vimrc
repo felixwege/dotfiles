@@ -425,6 +425,9 @@ vnoremap <leader>s :sort<CR>
 nnoremap <C-y> :call ScrollQuarterScreen('down')<CR>
 nnoremap <C-e> :call ScrollQuarterScreen('up')<CR>
 
+" append semicolon to line
+nnoremap <leader>; A;<ESC>
+
 
 " scroll a quarter of the screen up or down ------------------------------------
 function ScrollQuarterScreen(direction)

@@ -263,6 +263,10 @@ let g:pad#maps#newsilent = ''
 Plug 'machakann/vim-swap'
 
 
+" tommcdo/vim-exchange (exchange text selections) ------------------------------
+Plug 'tommcdo/vim-exchange'
+
+
 " RRethy/vim-illuminate (highlight word under cursor) --------------------------
 Plug 'RRethy/vim-illuminate'
 

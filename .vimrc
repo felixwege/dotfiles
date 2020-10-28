@@ -307,6 +307,10 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 
 
+" peitalin/vim-jsx-typescript --------------------------------------------------
+Plug 'peitalin/vim-jsx-typescript'
+
+
 " fatih/vim-go -----------------------------------------------------------------
 
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }

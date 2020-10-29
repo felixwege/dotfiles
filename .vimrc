@@ -54,7 +54,8 @@ endfunction
 
 " set up Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
-autocmd FileType javascript,typescript map <leader>f :Prettier<CR>
+autocmd FileType javascript,typescript nmap <leader>f :Prettier<CR>
+autocmd FileType javascript,typescript vmap <leader>f <Plug>(coc-format-selected)<CR>
 
 " navigate completion list
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"

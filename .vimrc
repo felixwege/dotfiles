@@ -88,7 +88,8 @@ vmap <leader>s <Plug>CtrlSFVwordExec
 
 " always use ripgrep if it exists
 if (executable('rg'))
-    let g:ctrlsf_ackprg = '/usr/bin/rg'
+    let path_to_rg = system('which rg')
+    let g_ctrlsf_ackprg = path_to_rg
 endif
 
 " switch focus to ctrlsf window

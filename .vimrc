@@ -40,7 +40,7 @@ nmap <silent> g] <Plug>(coc-diagnostic-next)
 
 
 " Show documentation in preview window.
-nnoremap <silent> <leader>j :call <SID>show_documentation()<CR>
+nnoremap <silent> <leader>i :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)

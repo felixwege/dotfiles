@@ -83,5 +83,14 @@ function gcsp {
     git checkout -
 }
 
+# timewarrior
+alias tw="timew"
+alias tws="timew start"
+alias twp="timew stop"
+alias twt="timew track"
+alias twd="timew day"
+alias tww="timew week"
+alias twm="timew month"
+
 [[ -f ~/.grc.zsh ]] && source ~/.grc.zsh
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh

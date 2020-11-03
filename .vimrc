@@ -16,7 +16,7 @@ call plug#begin('~/.vim/autoload')
 " coc.vim ----------------------------------------------------------------------
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-let g:coc_global_extensions = ['coc-sh', 'coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-yaml', 'coc-prettier', 'coc-python']
+let g:coc_global_extensions = ['coc-sh', 'coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-yaml', 'coc-prettier', 'coc-python', 'coc-snippets']
 
 " Apply codeAction to the current line
 nmap <leader>a  <Plug>(coc-codeaction)
@@ -226,18 +226,6 @@ let g:vim_json_syntax_conceal = 0
 
 " vimtex -----------------------------------------------------------------------
 Plug 'lervag/vimtex', { 'for': 'tex' }
-
-
-" ultisnips (snippet engine) ---------------------------------------------------
-Plug 'SirVer/ultisnips'
-
-"let g:UltiSnipsExpandTrigger = '<C-j>'
-let g:UltiSnipsJumpForwardTrigger="<C-l>"
-let g:UltiSnipsJumpBackwardTrigger="<C-h>"
-let g:UltiSnipsSnippetDirectories = ['/home/felix/.vim/bundle/vim-snippets/UltiSnips']
-if getcwd() =~ "nao"
-  call add(g:UltiSnipsSnippetDirectories,'/home/felix/Repositories/HULKs/nao/tools/IDEPlugins/NaoSnippets')
-endif
 
 
 " vim-snippets (collecion of snippets) -----------------------------------------

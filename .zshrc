@@ -83,4 +83,5 @@ function gcsp {
     git checkout -
 }
 
+[[ -f ~/.grc.zsh ]] && source ~/.grc.zsh
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh

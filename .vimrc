@@ -22,10 +22,10 @@ let g:coc_global_extensions = ['coc-sh', 'coc-tslint-plugin', 'coc-tsserver', 'c
 nmap <leader>a  <Plug>(coc-codeaction)
 
 " Apply AutoFix to problem on the current line
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>cq  <Plug>(coc-fix-current)
 
 " Symbol renaming
-nmap <leader>rf <Plug>(coc-rename)
+nmap <leader>cr <Plug>(coc-rename)
 
 
 " Code navigation
@@ -78,6 +78,7 @@ nnoremap <leader>se :CocCommand snippets.editSnippets<CR>
 " Install fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
+
 " Actual plugin
 Plug 'junegunn/fzf.vim'
 
@@ -85,32 +86,8 @@ Plug 'junegunn/fzf.vim'
 set rtp+=~/.fzf
 
 nnoremap <leader>e :Files<CR>
-
-
-" ctrlsf.vim (Sublime-like search window using ripgrep) ------------------------
-Plug 'dyng/ctrlsf.vim'
-
-" search for pattern (do not trim the whitespace, press Enter to search for word under cursor)
-nnoremap <leader>rg :CtrlSF 
-" search for visual selection
-vmap <leader>rg <Plug>CtrlSFVwordExec
-
-" always use ripgrep if it exists
-if (executable('rg'))
-    let path_to_rg = system('which rg')
-    let g_ctrlsf_ackprg = path_to_rg
-endif
-
-" switch focus to ctrlsf window
-let g:ctrlsf_auto_focus = {
-    \ "at": "start"
-    \ }
-
-" don't close ctrlsf window
-let g:ctrlsf_auto_close = {
-    \ "normal" : 0,
-    \ "compact": 0
-    \}
+nnoremap <leader>h :History<CR>
+nnoremap <leader>r :Rg<CR>
 
 
 " jeetsukumaran/vim-buffergator (list and switch buffers) ----------------------

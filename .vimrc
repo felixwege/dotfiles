@@ -25,7 +25,7 @@ nmap <leader>a  <Plug>(coc-codeaction)
 nmap <leader>qf  <Plug>(coc-fix-current)
 
 " Symbol renaming
-nmap <leader>r <Plug>(coc-rename)
+nmap <leader>rf <Plug>(coc-rename)
 
 
 " Code navigation
@@ -68,6 +68,10 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 let g:coc_snippet_next = '<c-l>'
 let g:coc_snippet_prev = '<c-h>'
 
+" list or edit snippets for current file tpe
+nnoremap <leader>sl :CocList snippets<CR>
+nnoremap <leader>se :CocCommand snippets.editSnippets<CR>
+
 
 " fzf and fzf.vim (search for files) -------------------------------------------
 "
@@ -87,9 +91,9 @@ nnoremap <leader>e :Files<CR>
 Plug 'dyng/ctrlsf.vim'
 
 " search for pattern (do not trim the whitespace, press Enter to search for word under cursor)
-nnoremap <leader>s :CtrlSF 
+nnoremap <leader>rg :CtrlSF 
 " search for visual selection
-vmap <leader>s <Plug>CtrlSFVwordExec
+vmap <leader>rg <Plug>CtrlSFVwordExec
 
 " always use ripgrep if it exists
 if (executable('rg'))
@@ -185,6 +189,10 @@ let g:gitgutter_map_keys = 0
 
 " vim-fugitive (git wrapper) ---------------------------------------------------
 Plug 'tpope/vim-fugitive'
+
+nnoremap <leader>gst :Gstatus<CR>
+nnoremap <leader>ga :Gwrite<CR>
+nnoremap <leader>gc :Gcommit<CR>
 
 
 " vim-rhubarb (:Gbrowse etc.) --------------------------------------------------

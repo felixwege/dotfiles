@@ -146,7 +146,7 @@ Plug 'vim-airline/vim-airline'
 let g:airline_theme='base16'
 
 let g:airline_section_b='%{fugitive#statusline()}'
-let g:airline_section_c='%f%m%r'
+let g:airline_section_c='%f%m%r%{ConflictedStatusLineInfo()}'
 let g:airline_section_z='%l/%L %c'
 
 " display all buffers when there's only one tab open
@@ -154,7 +154,6 @@ let g:airline#extensions#tabline#enabled = 1
 
 " only show tail of relative file path (the actual file name)
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-
 
 " vim-airline-themes (status line themes) --------------------------------------
 Plug 'vim-airline/vim-airline-themes'
@@ -200,6 +199,21 @@ Plug 'tpope/vim-rhubarb'
 
 nnoremap <leader>gx :Gbrowse<CR>
 vnoremap <leader>gx :Gbrowse<CR>
+
+
+" christoomey/vim-conflicted ---------------------------------------------------
+Plug 'christoomey/vim-conflicted'
+
+nnoremap <leader>gmerge :Conflicted<CR>
+
+function ConflictedStatusLineInfo()
+    let info = ConflictedVersion()
+    if empty(info)
+        return ''
+    endif
+
+    return ' | ' . info
+endfunction
 
 
 " vim-better-whitespace --------------------------------------------------------

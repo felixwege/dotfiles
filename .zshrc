@@ -64,6 +64,8 @@ alias gdc="git diff --compact-summary"
 alias gstw="git stash show"
 alias gstap="git stash push --patch"
 alias gcop="git checkout --patch"
+alias gcln="git clean --dry-run"
+alias gclf="git clean --force"
 
 # git merge squash
 function gms {

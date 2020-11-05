@@ -88,6 +88,7 @@ set rtp+=~/.fzf
 nnoremap <leader>e :Files<CR>
 nnoremap <leader>h :History<CR>
 nnoremap <leader>r :Rg<CR>
+nnoremap <leader>w :Rg <C-R><C-W><CR>
 
 
 " jeetsukumaran/vim-buffergator (list and switch buffers) ----------------------

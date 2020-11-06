@@ -86,13 +86,9 @@ Plug 'junegunn/fzf.vim'
 set rtp+=~/.fzf
 
 nnoremap <leader>e :Files<CR>
-nnoremap <leader>h :History<CR>
+nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>r :Rg<CR>
 nnoremap <leader>w :Rg <C-R><C-W><CR>
-
-
-" jeetsukumaran/vim-buffergator (list and switch buffers) ----------------------
-Plug 'jeetsukumaran/vim-buffergator'
 
 
 " christoomey/vim-tmux-navigator -----------------------------------------------
@@ -142,8 +138,10 @@ Plug 'scrooloose/nerdtree'
 
 let NERDTreeShowHidden=1
 
-map <leader>nt :NERDTreeToggle<CR>
-map <leader>nf :NERDTreeFind<CR>
+map <leader>tt :NERDTreeToggle<CR>
+
+" vertical split (same command and behavior as tmux)
+nnoremap <leader>% :NERDTreeClose<CR> :vsplit<CR><C-w><C-l>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -412,10 +410,6 @@ nnoremap <BS> hx
 
 " jump to last non-whitespace character of current line (analogous to ^, which  jumps to the first non-whitespace character)
 nnoremap _ g_
-
-nnoremap <leader>v :NERDTreeClose<CR> :vsplit<CR><C-w><C-l>
-nnoremap <leader>h :NERDTreeClose<CR> :split<CR><C-w><C-j>
-nnoremap <leader>m :! make<CR><CR>
 
 " substitute word under cursor
 nnoremap <leader>u :%s/\<<C-r><C-w>\>//g<Left><Left><Paste>

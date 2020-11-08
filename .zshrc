@@ -10,6 +10,11 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 # load zgen
 source "${HOME}/.zgen/zgen.zsh"
 
+# export android environment variables
+export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export ANDROID_AVD_HOME=$HOME/.android/avd
+
 # if the init script doesn't exist
 if ! zgen saved; then
     # plugins

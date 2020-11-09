@@ -138,7 +138,8 @@ Plug 'scrooloose/nerdtree'
 
 let NERDTreeShowHidden=1
 
-map <leader>tt :NERDTreeToggle<CR>
+nnoremap <leader>tt :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
 
 " vertical split (same command and behavior as tmux)
 nnoremap <leader>% :NERDTreeClose<CR> :vsplit<CR><C-w><C-l>

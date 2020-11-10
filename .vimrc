@@ -16,7 +16,7 @@ call plug#begin('~/.vim/autoload')
 " coc.vim ----------------------------------------------------------------------
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-let g:coc_global_extensions = ['coc-sh', 'coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-yaml', 'coc-prettier', 'coc-python', 'coc-snippets', 'coc-flutter']
+let g:coc_global_extensions = ['coc-sh', 'coc-tsserver', 'coc-eslint', 'coc-css', 'coc-html', 'coc-json', 'coc-yaml', 'coc-prettier', 'coc-python', 'coc-snippets', 'coc-flutter']
 
 " Apply codeAction to the current line
 nmap <leader>a  <Plug>(coc-codeaction)

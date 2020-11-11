@@ -91,6 +91,8 @@ function gcsp {
     git checkout -
 }
 
+alias lg="lazygit"
+
 # timewarrior
 alias tw="timew"
 alias tws="timew start"

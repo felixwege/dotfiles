@@ -102,5 +102,12 @@ alias twd="timew day"
 alias tww="timew week"
 alias twm="timew month"
 
+function watchMd2Pdf {
+    file=$1
+    md-to-pdf $file
+    open -a skim "${file%.*}.pdf"
+    md-to-pdf --watch $file &
+}
+
 [[ -f ~/.grc.zsh ]] && source ~/.grc.zsh
 [[ -f ~/.fzf.zsh ]] && source ~/.fzf.zsh

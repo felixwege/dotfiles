@@ -89,6 +89,34 @@ nnoremap <leader>e :Files<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>r :Rg<CR>
 nnoremap <leader>w :Rg <C-R><C-W><CR>
+vnoremap <leader>w :call SearchVisualSelection()<CR>
+" Not fzf but related to search
+autocmd FileType vim nnoremap <leader>h :help <C-R><C-W><CR>
+
+function! SearchVisualSelection()
+    call RgFn(GetVisualSelection())
+endfunction
+
+" Generic search function
+function! RgFn(query)
+    let command = 'rg --column --line-number --no-heading --color=always --smart-case -- '.shellescape(a:query)
+    let spec = {'options': ['--phony', '--query', a:query]}
+    call fzf#vim#grep(command, 1, fzf#vim#with_preview(spec), 0)
+endfunction
+
+" See https://stackoverflow.com/a/6271254
+function! GetVisualSelection()
+    " Why is this not a built-in Vim script function?!
+    let [line_start, column_start] = getpos("'<")[1:2]
+    let [line_end, column_end] = getpos("'>")[1:2]
+    let lines = getline(line_start, line_end)
+    if len(lines) == 0
+        return ''
+    endif
+    let lines[-1] = lines[-1][: column_end - (&selection == 'inclusive' ? 1 : 2)]
+    let lines[0] = lines[0][column_start - 1:]
+    return join(lines, "\n")
+endfunction
 
 
 " christoomey/vim-tmux-navigator -----------------------------------------------

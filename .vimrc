@@ -309,7 +309,7 @@ Plug 'tommcdo/vim-exchange'
 " RRethy/vim-illuminate (highlight word under cursor) --------------------------
 Plug 'RRethy/vim-illuminate'
 
-let g:Illuminate_delay = 0
+let g:Illuminate_delay = 100
 
 
 " rainbow_parentheses.vim ------------------------------------------------------

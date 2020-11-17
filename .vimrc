@@ -312,46 +312,8 @@ Plug 'RRethy/vim-illuminate'
 let g:Illuminate_delay = 100
 
 
-" rainbow_parentheses.vim ------------------------------------------------------
-Plug 'junegunn/rainbow_parentheses.vim'
-
-" activate when starting vim
-autocmd VimEnter * RainbowParentheses
-map <leader>tr :RainbowParentheses!!<CR>
-let g:rainbow#blacklist = [15, 7, 8, 6]
-
-
-" vim-cpp-enhanced-highlight ---------------------------------------------------
-Plug 'octol/vim-cpp-enhanced-highlight'
-
-
-" felixwege/semshi (python semantic highlighting) ------------------------------
-if has('nvim')
-    function! DoSemshi(info)
-        " unused parameter info
-        !pip3 install --upgrade --user pynvim
-        UpdateRemotePlugins
-    endfunction
-    Plug 'felixwege/semshi', { 'for': 'python', 'do': function('DoSemshi') }
-endif
-
-
-" pangloss/vim-javascript ------------------------------------------------------
-
-Plug 'pangloss/vim-javascript'
-
-
-" leafgarland/typescript-vim ---------------------------------------------------
-
-Plug 'leafgarland/typescript-vim'
-
-
-" peitalin/vim-jsx-typescript --------------------------------------------------
-Plug 'peitalin/vim-jsx-typescript'
-
-
-" dart-lang/dart-vim-plugin ----------------------------------------------------
-Plug 'dart-lang/dart-vim-plugin', { 'for': 'dart' }
+" sheerun/vim-polyglot ---------------------------------------------------------
+Plug 'sheerun/vim-polyglot'
 
 autocmd FileType dart map<leader>f :DartFmt<CR>
 
@@ -365,10 +327,6 @@ Plug 'thosakwe/vim-flutter', { 'for': 'dart' }
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoUpdateBinaries' }
 
 autocmd FileType go map <leader>f :GoFmt<CR>
-
-
-" mboughaba/i3config.vim (i3 config syntax highlighting) -----------------------
-Plug 'mboughaba/i3config.vim', { 'for': 'i3config' }
 
 
 " goyo (distraction free) ------------------------------------------------------

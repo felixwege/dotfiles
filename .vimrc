@@ -710,4 +710,4 @@ highlight SpellBad        ctermfg=Red   ctermbg=White cterm=underline guifg=Red 
 highlight SpellCap        ctermfg=Red   ctermbg=White cterm=underline guifg=Red   guibg=White gui=underline
 highlight SpellLocal      ctermfg=Red   ctermbg=White cterm=underline guifg=Red   guibg=White gui=underline
 highlight SpellRare       ctermfg=Red   ctermbg=White cterm=underline guifg=Red   guibg=White gui=underline
-highlight illuminatedWord ctermfg=Black ctermbg=Blue                  guifg=Black guibg=Blue
+highlight illuminatedWord ctermfg=White ctermbg=Blue                  guifg=White guibg=Blue
